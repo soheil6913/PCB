@@ -42,7 +42,17 @@ The GitHub Actions **Engineering verification** workflow succeeded on the fixtur
 - Pull-request run: [44901614113](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44901614113) — success; TypeScript check, automated tests, and production build passed.
 - Push run: [44901591237](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44901591237) — success.
 
-Both workflows included a non-failing Node.js 20 deprecation annotation for GitHub Actions. The report-only follow-up commit will cause PR checks to run again; its result is reported separately with the final PR evidence.
+Both workflows included a non-failing Node.js 20 deprecation annotation for GitHub Actions. The final-head checks after the delivery correction are recorded below.
+
+## Delivery correction (2026-11-21)
+
+This report is maintained only in the temporary reports repository [`soheil6913/PCB`](https://github.com/soheil6913/PCB); it has been removed from the change set of the PCB Studio Pro PR.
+
+- PR #2 final branch SHA: `e80fa7dadcb4ed0939f1a1fdb06c7580068b9daa`.
+- Files remaining in the PR: `shared/engineering.v2-compatibility.fixtures.ts` and `shared/engineering.v2-compatibility.test.ts` only. No production, schema, UI, or other files are changed.
+- Final-head push CI: [44908332189](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44908332189) — success.
+- Final-head pull-request CI: [44908337432](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44908337432) — success.
+- PR: [#2](https://github.com/soheil6913/-PCB-Studio-Pro/pull/2), open and not merged.
 
 ## Review boundary
 
