@@ -52,8 +52,10 @@ This report is maintained only in the temporary reports repository [`soheil6913/
 - Files remaining in the PR: `shared/engineering.v2-compatibility.fixtures.ts` and `shared/engineering.v2-compatibility.test.ts` only. No production, schema, UI, or other files are changed.
 - Final-head push CI: [44908332189](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44908332189) — success.
 - Final-head pull-request CI: [44908337432](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44908337432) — success.
-- PR: [#2](https://github.com/soheil6913/-PCB-Studio-Pro/pull/2), open and not merged.
+- PR: [#2](https://github.com/soheil6913/-PCB-Studio-Pro/pull/2), merged on 2026-11-21.
+- Squash merge commit on `main`: `a98384bbfc3296947b90f5254a03a77b11fdc8a9`.
+- Post-merge main CI: [44909006925](https://github.com/soheil6913/-PCB-Studio-Pro/actions/runs/44909006925) — success; TypeScript check, automated tests, and production build completed.
 
 ## Review boundary
 
-PR #2 is opened against `main` and intentionally remains unmerged. The branch is isolated from `main`; no production behavior was changed. This checkpoint only records and tests legacy v2 behavior and does not authorize Schema-v3 work, migration changes, Design Freeze, or release.
+PR #2 was merged into `main` after independent review of its exact two-file diff and successful pre-merge CI on the final branch SHA. The squash merge changed only the two compatibility test files; no production behavior was changed. The post-merge `main` workflow also completed successfully on merge commit `a98384bbfc3296947b90f5254a03a77b11fdc8a9`. This checkpoint only records and tests legacy v2 behavior and does not authorize Schema-v3 implementation, migration changes, Design Freeze, or release.
