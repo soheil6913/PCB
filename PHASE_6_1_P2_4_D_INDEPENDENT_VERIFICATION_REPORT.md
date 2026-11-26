@@ -68,7 +68,7 @@ Representative 160-digit reference values include:
 | `1` | `0.0174524064372835128194189785163161924722527203071396426836...` | `0.9998476951563912391570115588139148516927403105831859396583...` |
 | `45` | `0.7071067811865475244008443621048490392848359376884740365883...` | same as sine |
 | `89.99999999999999` | `0.9999999999999999999999999999999692415009895639169844636927...` | `0.0000000000000002480262043028360461851904643266088355166964...` |
-| `1e100` | `0.898794046299166992782676695785354929973973...` | `0.438371146789077417452734540658265739062755...` |
+| `1e100` | `0.898794046299166992782295676695785354929973...` | `0.438371146789077417452734540658265739062755...` |
 | `-1e100` | negative of the positive-angle sine | same cosine as the positive angle |
 
 The source baselines still use `Math.PI`, `Math.sin`, and `Math.cos` directly in `rotatePoint`, `transformLocalPoint`, rectangle corners, and common-axis oval calculations. No interval coefficient table, pi enclosure, polynomial, range-reduction proof, directed-rounding implementation, or remainder bound is present at either approved source SHA.
