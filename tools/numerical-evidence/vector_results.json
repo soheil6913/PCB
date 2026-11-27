@@ -1,8 +1,78 @@
 {
-  "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1",
+  "classificationCounts": {
+    "INVALID": 0,
+    "NON_FINITE": 1,
+    "UNIQUE": 27,
+    "UNRESOLVED": 24
+  },
+  "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+  "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
   "results": [
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x4008000000000000",
+          "interval": {
+            "hi": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+            "lo": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0x4010000000000000",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+            "lo": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0x4008000000000000",
+          "interval": {
+            "hi": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+            "lo": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0x4010000000000000",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+            "lo": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+          "lo": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+          "lo": "BEEAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        }
+      },
       "name": "zero",
       "observed": {
         "input": {
@@ -33,6 +103,8 @@
           }
         },
         "radiansBits": "0x0000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x4008000000000000",
           "xFinite": true,
@@ -77,19 +149,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "0.0",
-          "0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAAAAABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4043800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0xbfe6a09e667f3bc8",
+          "interval": {
+            "hi": "BEMAAAABAAAAAAAACLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+            "lo": "BEMAAAABAAAAAAAAFLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x4013cc8a99af5453",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAAXceyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+            "lo": "BEECAAABAAADAAAAW8eyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0xbfe6a09e667f3bc8",
+          "interval": {
+            "hi": "BEMAAAABAAAAAAAACLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+            "lo": "BEMAAAABAAAAAAAAFLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x4013cc8a99af5453",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAAXceyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+            "lo": "BEEAAAABAAADAAAAW8eyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEMAAAABAAAAAAAACLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+          "lo": "BEMAAAABAAAAAAAAFLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEEAAAABAAADAAAAXceyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+          "lo": "BEECAAABAAADAAAAW8eyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEMAAAABAAAAAAAACLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+          "lo": "BEMAAAABAAAAAAAAFLx6CYqOrNH4NQOhUGymKYi0r/ckaCrjmFne+TPzBLU=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEEAAAABAAADAAAAXceyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+          "lo": "BEEAAAABAAADAAAAW8eyTtNcHgADSxWMxDL+0c3GSySEVI+5JZiies1UZJ4=",
+          "reason": ""
+        }
+      },
       "name": "q1",
       "observed": {
         "input": {
@@ -120,6 +282,8 @@
           }
         },
         "radiansBits": "0x3fe921fb54442d18",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0xbfe6a09e667f3bc8",
           "xFinite": true,
@@ -164,19 +328,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "0.7071067811865475460497457679921806695016833414255741071584738764970363707358435",
-          "0.7071067811865475460497457679921806695016833414255741071584738764970363707358522"
-        ],
-        "sin": [
-          "0.7071067811865475027519429562175167462615432395374927895243661191374820215180412",
-          "0.7071067811865475027519429562175167462615432395374927895243661191374820215180499"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEBAAABAAAAAAAAnuiiOrZlHGwj88hs3a4S6cMRqGLsaYmzE2be+TPzBLU=",
+          "lo": "BEECAAABAAAAAAAAneiiOrZlHGwj88hs3a4S6cMRqGLsaYmzE2be+TPzBLU=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BEEBAAABAAAAAAAAet1YLutvgMXYg9c5Op43+XT66Yd6qXH/9GLe+TPzBLU=",
+          "lo": "BEECAAABAAAAAAAAed1YLutvgMXYg9c5Op43+XT66Yd6qXH/9GLe+TPzBLU=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4043800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0xc010000000000000",
+          "interval": {
+            "hi": "BEMBAAABAAACAAAAxgZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+            "lo": "BEMCAAABAAACAAAAyAZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0x4008000000000001",
+          "interval": {
+            "hi": "BEEBAAABAAACAAAAoUubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+            "lo": "BEECAAABAAACAAAAnkubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0xc010000000000000",
+          "interval": {
+            "hi": "BEMAAAABAAACAAAAxgZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+            "lo": "BEMAAAABAAACAAAAyAZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0x4008000000000001",
+          "interval": {
+            "hi": "BEEAAAABAAACAAAAoUubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+            "lo": "BEEAAAABAAACAAAAnkubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEMBAAABAAACAAAAxgZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+          "lo": "BEMCAAABAAACAAAAyAZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEEBAAABAAACAAAAoUubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+          "lo": "BEECAAABAAACAAAAnkubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEMAAAABAAACAAAAxgZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+          "lo": "BEMAAAABAAACAAAAyAZxqXcg2hb3HUxBT1y3/94YrL4ubNbYsPz///////8=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEEAAAABAAACAAAAoUubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+          "lo": "BEEAAAABAAACAAAAnkubtB/8Uvfy8B4LFrnw37TssAEXxYyJaQQAAAAAAMA=",
+          "reason": ""
+        }
+      },
       "name": "q2",
       "observed": {
         "input": {
@@ -207,6 +461,8 @@
           }
         },
         "radiansBits": "0x3ff921fb54442d18",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0xc010000000000000",
           "xFinite": true,
@@ -251,19 +507,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "6.123233995736765886130329661375001464640377798836283052096054982772486308397679e-17",
-          "6.123233995736765886130329661375001464640377798836283052096054982772486308397775e-17"
-        ],
-        "sin": [
-          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365404",
-          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365491"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BGEBAAABAAA1AAAANESC6fQuSRXDCnqA81+7CdTPIIKTQEo0BzfgopgxMY0=",
+          "lo": "BGECAAABAAA1AAAAM0SC6fQuSRXDCnqA81+7CdTPIIKTQEo0BzfgopgxMY0=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BEEBAAABAAAAAAAAR5mxhXrVGXsxFisGXNE6vRhE9v////////////////8=",
+          "lo": "BEECAAABAAAAAAAARpmxhXrVGXsxFisGXNE6vRhE9v////////////////8=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc040800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0xc008000000000001",
+          "interval": {
+            "hi": "BEMBAAABAAACAAAABNkfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+            "lo": "BEMCAAABAAACAAAAB9kfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0xc00fffffffffffff",
+          "interval": {
+            "hi": "BEMBAAABAAACAAAA9QHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+            "lo": "BEMCAAABAAACAAAA9wHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0xc008000000000001",
+          "interval": {
+            "hi": "BEMAAAABAAACAAAABNkfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+            "lo": "BEMAAAABAAACAAAAB9kfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0xc00fffffffffffff",
+          "interval": {
+            "hi": "BEMAAAABAAACAAAA9QHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+            "lo": "BEMAAAABAAACAAAA9wHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEMBAAABAAACAAAABNkfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+          "lo": "BEMCAAABAAACAAAAB9kfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEMBAAABAAACAAAA9QHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+          "lo": "BEMCAAABAAACAAAA9wHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEMAAAABAAACAAAABNkfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+          "lo": "BEMAAAABAAACAAAAB9kfb1FxvTCTr5jJNay5244/UwMuihkT0wgAAAAAAMA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEMAAAABAAACAAAA9QHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+          "lo": "BEMAAAABAAACAAAA9wHPyGhi09wGx1rPVlvkee+5RH1d2KyxYfn///////8=",
+          "reason": ""
+        }
+      },
       "name": "q3",
       "observed": {
         "input": {
@@ -294,6 +640,8 @@
           }
         },
         "radiansBits": "0x400921fb54442d18",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0xc008000000000001",
           "xFinite": true,
@@ -338,19 +686,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "-0.9999999999999999999999999999999925012010866907120267676217725716190568382889529",
-          "-0.9999999999999999999999999999999925012010866907120267676217725716190568382889443"
-        ],
-        "sin": [
-          "1.224646799147353177226065932274997997083053901299791949488257716260869609973242e-16",
-          "1.224646799147353177226065932274997997083053901299791949488257716260869609973262e-16"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEMBAAABAAAAAAAAviEjl6dWZ+zFWKwYcEXr9GIQ2f////////////////8=",
+          "lo": "BEMCAAABAAAAAAAAvyEjl6dWZ+zFWKwYcEXr9GIQ2f////////////////8=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BGEBAAABAAA0AAAAO3wXMmLEZ/tX3DsF//brz3ZxG4KTQEo0BzfgopgxMY0=",
+          "lo": "BGECAAABAAA0AAAAOnwXMmLEZ/tX3DsF//brz3ZxG4KTQEo0BzfgopgxMY0=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc044800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x400fffffffffffff",
+          "interval": {
+            "hi": "BEEBAAABAAACAAAAtyxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+            "lo": "BEECAAABAAACAAAAtSxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0xc008000000000002",
+          "interval": {
+            "hi": "BEMBAAABAAACAAAACZ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+            "lo": "BEMCAAABAAACAAAADJ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0x400fffffffffffff",
+          "interval": {
+            "hi": "BEEAAAABAAACAAAAtyxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+            "lo": "BEEAAAABAAACAAAAtSxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0xc008000000000002",
+          "interval": {
+            "hi": "BEMAAAABAAACAAAACZ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+            "lo": "BEMAAAABAAACAAAADJ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEEBAAABAAACAAAAtyxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+          "lo": "BEECAAABAAACAAAAtSxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEMBAAABAAACAAAACZ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+          "lo": "BEMCAAABAAACAAAADJ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEEAAAABAAACAAAAtyxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+          "lo": "BEEAAAABAAACAAAAtSxdydI91wrlWZjqFv2GbjHjyTuMRIOKEvb///////8=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEMAAAABAAACAAAACZ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+          "lo": "BEMAAAABAAACAAAADJ93rYsZsLVDaIflXtla84345gRFT6acPA0AAAAAAMA=",
+          "reason": ""
+        }
+      },
       "name": "q4",
       "observed": {
         "input": {
@@ -381,6 +819,8 @@
           }
         },
         "radiansBits": "0x4012d97c7f3321d2",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x400fffffffffffff",
           "xFinite": true,
@@ -425,19 +865,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "-1.836970198721029765839098898412491256012026705781026271905003373665843325770948e-16",
-          "-1.836970198721029765839098898412491256012026705781026271905003373665843325770929e-16"
-        ],
-        "sin": [
-          "-0.9999999999999999999999999999999831277024450541020602271489882861692366291855676",
-          "-0.999999999999999999999999999999983127702445054102060227148988286169236629185559"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BGMBAAABAAA0AAAAoKK1BI0caDh4Vr5TG2xbJ0m+G0PdYG/OilJQ9GTKydM=",
+          "lo": "BGMCAAABAAA0AAAAoaK1BI0caDh4Vr5TG2xbJ0m+G0PdYG/OilJQ9GTKydM=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BEMBAAABAAAAAAAAWs9qtb+F6FO9x4M3PFwRp95kqP////////////////8=",
+          "lo": "BEMCAAABAAAAAAAAW89qtb+F6FO9x4M3PFwRp95kqP////////////////8=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4047800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0xc0134328545f1093",
+          "interval": {
+            "hi": "BEMBAAABAAADAAAAMNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+            "lo": "BEMCAAABAAADAAAANNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0x40164e97e5a05383",
+          "interval": {
+            "hi": "BEEBAAABAAADAAAA/BmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+            "lo": "BEEAAAABAAADAAAA+hmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0xc0134328545f1093",
+          "interval": {
+            "hi": "BEMAAAABAAADAAAAMNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+            "lo": "BEMAAAABAAADAAAANNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0x40164e97e5a05383",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAA/BmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+            "lo": "BEEAAAABAAADAAAA+hmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEMBAAABAAADAAAAMNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+          "lo": "BEMCAAABAAADAAAANNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEEBAAABAAADAAAA/BmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+          "lo": "BEEAAAABAAADAAAA+hmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEMAAAABAAADAAAAMNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+          "lo": "BEMAAAABAAADAAAANNF6chuM7gWRCuy+0aZJWmwBb1RkauSr9peE+KJCGZo=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEEAAAABAAADAAAA/BmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+          "lo": "BEEAAAABAAADAAAA+hmbgUiqKpaikzdyCxSotcEZVPSEhYW03BycAi2/dLI=",
+          "reason": ""
+        }
+      },
       "name": "negative",
       "observed": {
         "input": {
@@ -468,6 +998,8 @@
           }
         },
         "radiansBits": "0xbfe1504c6d40084f",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0xc0134328545f1093",
           "xFinite": true,
@@ -512,19 +1044,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "0.8571673007021123046813703205231835149919384657761120989413026711417008249770272",
-          "0.8571673007021123046813703205231835149919384657761120989413026711417008249770358"
-        ],
-        "sin": [
-          "-0.5150380749100541814291428312854825889014840951339964936852020548506210337631299",
-          "-0.5150380749100541814291428312854825889014840951339964936852020548506210337631212"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEBAAABAAAAAAAAnpZS5/H9fo3LFvWQtP5jZ0wPwnzIB2Nb6u1Wt/NQb9s=",
+          "lo": "BEECAAABAAAAAAAAnZZS5/H9fo3LFvWQtP5jZ0wPwnzIB2Nb6u1Wt/NQb9s=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BEMBAAABAAAAAAAAeEoFaxecmsKLRhK9bEtv0MYG4oVYV6m93Zn47geJ2YM=",
+          "lo": "BEMCAAABAAAAAAAAeUoFaxecmsKLRhK9bEtv0MYG4oVYV6m93Zn47geJ2YM=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0xc01c000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4002666666666666",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc04659999999999a",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4002666666666666",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0xc054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x3ffadcbf773b7689",
+          "interval": {
+            "hi": "BEEAAAABAAABAAAAOJZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+            "lo": "BEEAAAABAAABAAAANZZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x4012d6bcc6f4a271",
+          "interval": {
+            "hi": "BEEBAAABAAADAAAAfwpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+            "lo": "BEECAAABAAADAAAAfQpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0x3ffadcbf773b7689",
+          "interval": {
+            "hi": "BEEAAAABAAABAAAAOJZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+            "lo": "BEEAAAABAAABAAAANZZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x4012d6bcc6f4a271",
+          "interval": {
+            "hi": "BEEAAAABAAADAAAAfwpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+            "lo": "BEEAAAABAAADAAAAfQpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEEAAAABAAABAAAAOJZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+          "lo": "BEEAAAABAAABAAAANZZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEEBAAABAAADAAAAfwpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+          "lo": "BEECAAABAAADAAAAfQpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEEAAAABAAABAAAAOJZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+          "lo": "BEEAAAABAAABAAAANZZbmpAuWiD9FtvdKwERmEvUPGuaf9vHrkO027n75dY=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BEEAAAABAAADAAAAfwpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+          "lo": "BEEAAAABAAADAAAAfQpfJvS8dyuBRSvvCig+DKZ340bS5BiqiIcTpTfmtZY=",
+          "reason": ""
+        }
+      },
       "name": "out-of-range",
       "observed": {
         "input": {
@@ -555,6 +1177,8 @@
           }
         },
         "radiansBits": "0x4033268f5fcf2618",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x3ffadcbf773b7689",
           "xFinite": true,
@@ -599,19 +1223,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "0.9550199444571868707562366444102066754818306252766307934554784726620825869530299",
-          "0.9550199444571868707562366444102066754818306252766307934554784726620825869530385"
-        ],
-        "sin": [
-          "0.2965415749755701698422398832538341046594579962250801502135612677648606469614076",
-          "0.2965415749755701698422398832538341046594579962250801502135612677648606469614119"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEBAAABAAAAAAAAcVquQTJZ7CqQDBqGGPYLr+aY1QP/VyFHP6mqeOQvfPQ=",
+          "lo": "BEECAAABAAAAAAAAcFquQTJZ7CqQDBqGGPYLr+aY1QP/VyFHP6mqeOQvfPQ=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BGEBAAABAAABAAAAc/EpyDpXCCDb+0vr+O+Abg6RgxpkhNYiMLpL2RxM1Jc=",
+          "lo": "BGECAAABAAABAAAAcvEpyDpXCCDb+0vr+O+Abg6RgxpkhNYiMLpL2RxM1Jc=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4043800000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4054000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4044000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArAABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        }
+      },
       "name": "signed-zero",
       "observed": {
         "input": {
@@ -642,6 +1356,8 @@
           }
         },
         "radiansBits": "0x8000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x0000000000000000",
           "xFinite": true,
@@ -678,19 +1394,101 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "-0.0",
-          "-0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAIArQABAAA=",
+          "lo": "BAIArQABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x8000000000000000",
+          "xFinite": true,
+          "xNegZero": true,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x0000000000000001",
+          "interval": {
+            "hi": "BGEBAAABAAAxBAAA+dgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+            "lo": "BGECAAABAAAxBAAA+NgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0x0000000000000001",
+          "interval": {
+            "hi": "BGEBAAABAAAyBAAAnYBbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+            "lo": "BGECAAABAAAyBAAAm4BbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformX": {
+          "candidateBits": "0x0000000000000001",
+          "interval": {
+            "hi": "BGEAAAABAAAxBAAA+dgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+            "lo": "BGEAAAABAAAxBAAA+NgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000001",
+          "interval": {
+            "hi": "BGEAAAABAAAyBAAAnYBbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+            "lo": "BGEAAAABAAAyBAAAm4BbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BGEBAAABAAAxBAAA+dgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+          "lo": "BGECAAABAAAxBAAA+NgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BGEBAAABAAAyBAAAnYBbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+          "lo": "BGECAAABAAAyBAAAm4BbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BGEAAAABAAAxBAAA+dgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+          "lo": "BGEAAAABAAAxBAAA+NgDK7+4DKs/21SGtrafh90+14CLYsbENAIAAAAAAIA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BGEAAAABAAAyBAAAnYBbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+          "lo": "BGEAAAABAAAyBAAAm4BbtXY5GqDjdaz/SjU2a3YKPv7oOnN2lvv///////8=",
+          "reason": ""
+        }
+      },
       "name": "subnormal",
       "observed": {
         "input": {
@@ -721,6 +1519,8 @@
           }
         },
         "radiansBits": "0x3ff921fb54442d18",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x0000000000000001",
           "xFinite": true,
@@ -757,19 +1557,101 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "6.123233995736765886130329661375001464640377798836283052096054982772486308397679e-17",
-          "6.123233995736765886130329661375001464640377798836283052096054982772486308397775e-17"
-        ],
-        "sin": [
-          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365404",
-          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365491"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BGEBAAABAAA1AAAANESC6fQuSRXDCnqA81+7CdTPIIKTQEo0BzfgopgxMY0=",
+          "lo": "BGECAAABAAA1AAAAM0SC6fQuSRXDCnqA81+7CdTPIIKTQEo0BzfgopgxMY0=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BEEBAAABAAAAAAAAR5mxhXrVGXsxFisGXNE6vRhE9v////////////////8=",
+          "lo": "BEECAAABAAAAAAAARpmxhXrVGXsxFisGXNE6vRhE9v////////////////8=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x0000000000000001",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x8000000000000001",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x7fefffffffffffff",
+          "interval": {
+            "hi": "BEEAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "lo": "BEEAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "reason": ""
+          },
+          "reason": "interval lies strictly inside candidate binary64 cell",
+          "status": "UNIQUE"
+        },
+        "rotateY": {
+          "candidateBits": "0x7fefffffffffffff",
+          "interval": {
+            "hi": "BEMAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "lo": "BEMAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "reason": ""
+          },
+          "reason": "interval touches or crosses a binary64 midpoint/overflow boundary",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0x7ff0000000000000",
+          "interval": {
+            "hi": "BEEAAAABAAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "lo": "BEEAAAABAAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+            "reason": ""
+          },
+          "reason": "captured JavaScript output is POSITIVE_INFINITY",
+          "status": "NON_FINITE"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BEEAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "lo": "BEEAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BEMAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "lo": "BEMAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BEEAAAABAAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "lo": "BEEAAAABAAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        }
+      },
       "name": "max-translation",
       "observed": {
         "input": {
@@ -800,6 +1682,8 @@
           }
         },
         "radiansBits": "0x0000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x7fefffffffffffff",
           "xFinite": true,
@@ -836,19 +1720,101 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "0.0",
-          "0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAArQABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x7fefffffffffffff",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x7fefffffffffffff",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x4000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4008000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        }
+      },
       "name": "route-below-epsilon",
       "observed": {
         "input": {
@@ -879,6 +1845,8 @@
           }
         },
         "radiansBits": "0x0000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x0000000000000000",
           "xFinite": true,
@@ -915,19 +1883,101 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "0.0",
-          "0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAArQABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x3e7ad7f29abcaf46",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        }
+      },
       "name": "route-at-epsilon",
       "observed": {
         "input": {
@@ -958,6 +2008,8 @@
           }
         },
         "radiansBits": "0x0000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x0000000000000000",
           "xFinite": true,
@@ -1002,19 +2054,109 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "0.0",
-          "0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAArQABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x3e7ad7f29abcaf48",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x3e7ad7f29abcaf48",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     },
     {
-      "finalOutputCell": "UNRESOLVED",
+      "classifications": {
+        "rotateX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "rotateY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformX": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAIArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        },
+        "transformY": {
+          "candidateBits": "0x0000000000000000",
+          "interval": {
+            "hi": "BAAArQABAAA=",
+            "lo": "BAAArQABAAA=",
+            "reason": ""
+          },
+          "reason": "signed-zero cell requires operation-sign evidence",
+          "status": "UNRESOLVED"
+        }
+      },
+      "intermediateIntervals": {
+        "rotatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "rotatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        },
+        "translatedX": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAIA9wABAAA=",
+          "reason": ""
+        },
+        "translatedY": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAA9wABAAA=",
+          "reason": ""
+        }
+      },
       "name": "route-above-epsilon",
       "observed": {
         "input": {
@@ -1045,6 +2187,8 @@
           }
         },
         "radiansBits": "0x0000000000000000",
+        "referenceCommit": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+        "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1/shared/engineering.ts",
         "rotate": {
           "xBits": "0x0000000000000000",
           "xFinite": true,
@@ -1089,18 +2233,44 @@
         }
       },
       "radianTrigInterval": {
-        "cos": [
-          "1.0",
-          "1.0"
-        ],
-        "sin": [
-          "0.0",
-          "0.0"
-        ],
-        "status": "ENCLOSED"
-      }
+        "cos": {
+          "hi": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "lo": "BEEAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=",
+          "reason": ""
+        },
+        "sin": {
+          "hi": "BAAArQABAAA=",
+          "lo": "BAAArQABAAA=",
+          "reason": ""
+        }
+      },
+      "routeObservation": [
+        {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x3e7ad7f29abcaf4a",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        {
+          "xBits": "0x3e7ad7f29abcaf4a",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      ]
     }
   ],
-  "unresolvedCount": 13,
   "vectorCount": 13
 }
