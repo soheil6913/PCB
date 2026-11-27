@@ -1,0 +1,1106 @@
+{
+  "referenceSource": "/home/ubuntu/PCB-Studio-Pro-p2-4-d-1",
+  "results": [
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "zero",
+      "observed": {
+        "input": {
+          "degreesBits": "0x0000000000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x0000000000000000",
+        "rotate": {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4043800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x4008000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4010000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "0.0",
+          "0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "q1",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4046800000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x3fe921fb54442d18",
+        "rotate": {
+          "xBits": "0xbfe6a09e667f3bc8",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4013cc8a99af5453",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4043800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0xbfe6a09e667f3bc8",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4013cc8a99af5453",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "0.7071067811865475460497457679921806695016833414255741071584738764970363707358435",
+          "0.7071067811865475460497457679921806695016833414255741071584738764970363707358522"
+        ],
+        "sin": [
+          "0.7071067811865475027519429562175167462615432395374927895243661191374820215180412",
+          "0.7071067811865475027519429562175167462615432395374927895243661191374820215180499"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "q2",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4056800000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x3ff921fb54442d18",
+        "rotate": {
+          "xBits": "0xc010000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4008000000000001",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc040800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0xc010000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4008000000000001",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "6.123233995736765886130329661375001464640377798836283052096054982772486308397679e-17",
+          "6.123233995736765886130329661375001464640377798836283052096054982772486308397775e-17"
+        ],
+        "sin": [
+          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365404",
+          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365491"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "q3",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4066800000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x400921fb54442d18",
+        "rotate": {
+          "xBits": "0xc008000000000001",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc00fffffffffffff",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc044800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0xc044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0xc008000000000001",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc00fffffffffffff",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "-0.9999999999999999999999999999999925012010866907120267676217725716190568382889529",
+          "-0.9999999999999999999999999999999925012010866907120267676217725716190568382889443"
+        ],
+        "sin": [
+          "1.224646799147353177226065932274997997083053901299791949488257716260869609973242e-16",
+          "1.224646799147353177226065932274997997083053901299791949488257716260869609973262e-16"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "q4",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4070e00000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x4012d97c7f3321d2",
+        "rotate": {
+          "xBits": "0x400fffffffffffff",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc008000000000002",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4047800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0xc044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x400fffffffffffff",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0xc008000000000002",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "-1.836970198721029765839098898412491256012026705781026271905003373665843325770948e-16",
+          "-1.836970198721029765839098898412491256012026705781026271905003373665843325770929e-16"
+        ],
+        "sin": [
+          "-0.9999999999999999999999999999999831277024450541020602271489882861692366291855676",
+          "-0.999999999999999999999999999999983127702445054102060227148988286169236629185559"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "negative",
+      "observed": {
+        "input": {
+          "degreesBits": "0xc03f000000000000",
+          "local": {
+            "xBits": "0xc01c000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4002666666666666",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0xc01c000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4002666666666666",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0xbfe1504c6d40084f",
+        "rotate": {
+          "xBits": "0xc0134328545f1093",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x40164e97e5a05383",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0xc01c000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4002666666666666",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc04659999999999a",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4002666666666666",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0xc054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0xc0134328545f1093",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x40164e97e5a05383",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "0.8571673007021123046813703205231835149919384657761120989413026711417008249770272",
+          "0.8571673007021123046813703205231835149919384657761120989413026711417008249770358"
+        ],
+        "sin": [
+          "-0.5150380749100541814291428312854825889014840951339964936852020548506210337631299",
+          "-0.5150380749100541814291428312854825889014840951339964936852020548506210337631212"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "out-of-range",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4091250000000000",
+          "local": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x4033268f5fcf2618",
+        "rotate": {
+          "xBits": "0x3ffadcbf773b7689",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4012d6bcc6f4a271",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x4008000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4043800000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4010000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4054000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4044000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x3ffadcbf773b7689",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x4012d6bcc6f4a271",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "0.9550199444571868707562366444102066754818306252766307934554784726620825869530299",
+          "0.9550199444571868707562366444102066754818306252766307934554784726620825869530385"
+        ],
+        "sin": [
+          "0.2965415749755701698422398832538341046594579962250801502135612677648606469614076",
+          "0.2965415749755701698422398832538341046594579962250801502135612677648606469614119"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "signed-zero",
+      "observed": {
+        "input": {
+          "degreesBits": "0x8000000000000000",
+          "local": {
+            "xBits": "0x8000000000000000",
+            "xFinite": true,
+            "xNegZero": true,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x8000000000000000",
+            "xFinite": true,
+            "xNegZero": true,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x8000000000000000",
+        "rotate": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x8000000000000000",
+            "xFinite": true,
+            "xNegZero": true,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "-0.0",
+          "-0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "subnormal",
+      "observed": {
+        "input": {
+          "degreesBits": "0x4056800000000000",
+          "local": {
+            "xBits": "0x0000000000000001",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x8000000000000001",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x0000000000000001",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x8000000000000001",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x3ff921fb54442d18",
+        "rotate": {
+          "xBits": "0x0000000000000001",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000001",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x0000000000000001",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x8000000000000001",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x0000000000000001",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000001",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "6.123233995736765886130329661375001464640377798836283052096054982772486308397679e-17",
+          "6.123233995736765886130329661375001464640377798836283052096054982772486308397775e-17"
+        ],
+        "sin": [
+          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365404",
+          "0.9999999999999999999999999999999981253002716726780066919054431429030069600365491"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "max-translation",
+      "observed": {
+        "input": {
+          "degreesBits": "0x0000000000000000",
+          "local": {
+            "xBits": "0x7fefffffffffffff",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0xffefffffffffffff",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x7fefffffffffffff",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x7fefffffffffffff",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x7fefffffffffffff",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x7fefffffffffffff",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x0000000000000000",
+        "rotate": {
+          "xBits": "0x7fefffffffffffff",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x7fefffffffffffff",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x7fefffffffffffff",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x7fefffffffffffff",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x4000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4008000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x7ff0000000000000",
+          "xFinite": false,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "0.0",
+          "0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "route-below-epsilon",
+      "observed": {
+        "input": {
+          "degreesBits": "0x0000000000000000",
+          "local": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x0000000000000000",
+        "rotate": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x3e7ad7f29abcaf46",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "0.0",
+          "0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "route-at-epsilon",
+      "observed": {
+        "input": {
+          "degreesBits": "0x0000000000000000",
+          "local": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x0000000000000000",
+        "rotate": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x3e7ad7f29abcaf48",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x3e7ad7f29abcaf48",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "0.0",
+          "0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    },
+    {
+      "finalOutputCell": "UNRESOLVED",
+      "name": "route-above-epsilon",
+      "observed": {
+        "input": {
+          "degreesBits": "0x0000000000000000",
+          "local": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "origin": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          "point": {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        },
+        "radiansBits": "0x0000000000000000",
+        "rotate": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        },
+        "route": [
+          {
+            "xBits": "0x0000000000000000",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x3e7ad7f29abcaf4a",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x0000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          },
+          {
+            "xBits": "0x3e7ad7f29abcaf4a",
+            "xFinite": true,
+            "xNegZero": false,
+            "yBits": "0x4000000000000000",
+            "yFinite": true,
+            "yNegZero": false
+          }
+        ],
+        "transform": {
+          "xBits": "0x0000000000000000",
+          "xFinite": true,
+          "xNegZero": false,
+          "yBits": "0x0000000000000000",
+          "yFinite": true,
+          "yNegZero": false
+        }
+      },
+      "radianTrigInterval": {
+        "cos": [
+          "1.0",
+          "1.0"
+        ],
+        "sin": [
+          "0.0",
+          "0.0"
+        ],
+        "status": "ENCLOSED"
+      }
+    }
+  ],
+  "unresolvedCount": 13,
+  "vectorCount": 13
+}
