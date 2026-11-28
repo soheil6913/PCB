@@ -1,0 +1,43 @@
+{
+  "conclusion": "MPFR preserves a sign in its internal binary serialization for signed zero if exposed by the binding, but ordinary real equality and decimal text collapse both zeros; therefore JavaScript bit semantics must be checked independently.",
+  "gmpy2_version": "2.3.2",
+  "precision": 256,
+  "values": [
+    {
+      "equal_zero": true,
+      "is_zero": true,
+      "label": "plus_zero",
+      "repr": "mpfr('0.0')",
+      "sign": 0,
+      "str": "0.0",
+      "to_binary_hex": "0400009a35000000"
+    },
+    {
+      "equal_zero": true,
+      "is_zero": true,
+      "label": "minus_zero",
+      "repr": "mpfr('-0.0')",
+      "sign": 0,
+      "str": "-0.0",
+      "to_binary_hex": "0402009a35000000"
+    },
+    {
+      "equal_zero": false,
+      "is_zero": false,
+      "label": "plus_one",
+      "repr": "mpfr('1.0')",
+      "sign": 1,
+      "str": "1.0",
+      "to_binary_hex": "0441000035000000010000000000000000000080"
+    },
+    {
+      "equal_zero": false,
+      "is_zero": false,
+      "label": "minus_one",
+      "repr": "mpfr('-1.0')",
+      "sign": -1,
+      "str": "-1.0",
+      "to_binary_hex": "0443000035000000010000000000000000000080"
+    }
+  ]
+}

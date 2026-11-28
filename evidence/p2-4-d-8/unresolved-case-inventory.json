@@ -1,0 +1,1000 @@
+{
+  "attestation": {
+    "accepted": true,
+    "dirtyStatus": "",
+    "expectedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "file": {
+      "bytes": 81255,
+      "path": "/tmp/p24d7-source/shared/engineering.ts",
+      "sha256": "545038007080da77f36e8e3bf3bab6945b6ad8bd949536fca9069cdcbf3164e9"
+    },
+    "observedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "sourceRoot": "/tmp/p24d7-source"
+  },
+  "inventory": [
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x405a3cc8a99af545",
+          "y": "0xc06916a09e667f3c"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "ordinary-45",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding MPFR interval plus independent JavaScript execution; do not infer universal libm correctness",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x405a000000000000",
+          "y": "0xc068a00000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "ordinary-90",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding MPFR interval plus independent JavaScript execution; inspect exact-axis signed-zero and cancellation",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x4058400000000000",
+          "y": "0xc068800000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "ordinary-180",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding MPFR interval plus independent JavaScript execution; inspect exact-axis signed-zero and cancellation",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x4058000000000000",
+          "y": "0xc069600000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "ordinary-270",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding MPFR interval plus independent JavaScript execution; inspect exact-axis signed-zero and cancellation",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x4059c00000000000",
+          "y": "0xc069800000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "ordinary-360",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding MPFR interval plus independent JavaScript execution; inspect exact-axis signed-zero and cancellation",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 1,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0xc0b2631b5603080c",
+          "y": "0x40a67d5bfbedcfb4"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "negative-angle",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "directed-rounding interval and independent JavaScript bit comparison for negative-angle reduction",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 6485328709579050,
+          "y": 1
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x3ca0000000000000",
+          "y": "0x3ff6a09e667f3bcc"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "adjacent-45",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "adversarial boundary testing and independent JavaScript bit comparison around the adjacent degree values",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x3ff0000000000000",
+          "y": "0x3fefffffffffffff"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "adjacent-90",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "adversarial boundary testing and independent JavaScript bit comparison around the adjacent degree values",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0xbff0000000000001",
+          "y": "0xbfefffffffffffff"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "adjacent-180",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "adversarial boundary testing and independent JavaScript bit comparison around the adjacent degree values",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x3feffffffffffffe",
+          "y": "0xbff0000000000001"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "adjacent-270",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "adversarial boundary testing and independent JavaScript bit comparison around the adjacent degree values",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x3ff0000000000001",
+          "y": "0x3feffffffffffffe"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "adjacent-360",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "adversarial boundary testing and independent JavaScript bit comparison around the adjacent degree values",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 6485328709579051,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x7ca0000000000000",
+          "y": "0x7ff0000000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "large-cancellation",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "MPFR interval verification with directed rounding and exact binary64 final-operation replay",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 6048990701490383,
+          "y": 1
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x7ff0000000000000",
+          "y": "0x7feffffffffffffe"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "large-opposite",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "MPFR interval verification with directed rounding and exact binary64 final-operation replay",
+      "severity": "medium"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 1,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x401499c9472f9910",
+          "y": "0x400b16fdecfcb32e"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "huge-angle",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "independent JavaScript execution across runtimes plus a separately specified argument-reduction reference; implementation-dependent until then",
+      "severity": "high"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": false,
+          "y": false
+        },
+        "output_ulp_difference_if_unique": {
+          "x": null,
+          "y": null
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0xfff8000000000000",
+          "y": "0xfff8000000000000"
+        },
+        "trig_interval_contains_js": false,
+        "trig_unique_binary64": {
+          "cos": false,
+          "sin": false
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "max-angle",
+      "mathematical_or_numerical_issue": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output",
+        "Model A output interval does not prove a unique binary64 output cell"
+      ],
+      "missing_evidence": [
+        "A proof connecting the implementation-dependent ECMAScript Math.sin/Math.cos result to the exact-real MPFR model without assuming universal correct rounding.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "MPFR interval verification, binary64 cell comparison, and explicit overflow/non-finite boundary proof",
+      "severity": "high"
+    },
+    {
+      "existing_evidence": {
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "output_ulp_difference_if_unique": {
+          "x": 0,
+          "y": 0
+        },
+        "reproduced_from_fresh_capture": true,
+        "source_final_bits": {
+          "x": "0x7ff0000000000000",
+          "y": "0x0000000000000000"
+        },
+        "trig_interval_contains_js": true,
+        "trig_unique_binary64": {
+          "cos": true,
+          "sin": true
+        }
+      },
+      "final_disposition": "REMAINS_UNRESOLVED \u2014 retained for D9; no unresolved case is promoted to passed",
+      "id": "overflow-translation",
+      "mathematical_or_numerical_issue": [
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "missing_evidence": [
+        "No trig interval mismatch for this case; remaining output-model relation still needs proof.",
+        "A complete signed-zero/non-finite semantic correspondence where applicable."
+      ],
+      "reproducibility_status": "REPRODUCED in independent D8 rerun from freshly captured JSON and MPFR output",
+      "required_proof": "binary64 bit-level comparison, independent JavaScript execution, and explicit IEEE-754 non-finite propagation proof",
+      "severity": "high"
+    }
+  ],
+  "model_policy": {
+    "model_a": "exact-real/MPFR directed-rounding interval propagation",
+    "model_b": "actual JavaScript binary64 operation sequence captured from pinned source",
+    "relationship": "not interchangeable; containment failure is an evidence gap, not proof of a production defect or universal trig failure"
+  },
+  "summary": {
+    "closed_count": 0,
+    "d7_reproduced_counts": {
+      "model_a_model_b_containment_count": 3,
+      "output_x_unique_count": 18,
+      "output_x_unique_match_count": 13,
+      "output_y_unique_count": 18,
+      "output_y_unique_match_count": 16,
+      "trig_cos_unique_correct_count": 18,
+      "trig_cos_unique_count": 18,
+      "trig_enclosure_containment_count": 4,
+      "trig_sin_unique_correct_count": 17,
+      "trig_sin_unique_count": 18,
+      "vector_count": 19
+    },
+    "d8_rerun": {
+      "capture_byte_sha256": "c0d70084d62d0372affd33471b8d15a945a4ad165262a5717e6b5ee8e3a2e09d",
+      "mpfr_byte_sha256": "cb94a59f60a86dae6c63df0442f94c94e516328517c94dccd682381a70ac6db7",
+      "source_sha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+      "vector_count": 19
+    },
+    "remaining_unresolved_count": 16,
+    "trig_mismatch_count": 15,
+    "unresolved_case_count": 16,
+    "verdict": "PARTIALLY_VALIDATED"
+  },
+  "trigonometric_mismatch_investigation": [
+    {
+      "id": "ordinary-45",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3fe6a09e667f3bcd",
+        "sin": "0x3fe6a09e667f3bcc"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "ordinary-90",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3c91a62633145c07",
+        "sin": "0x3ff0000000000000"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "ordinary-180",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0xbff0000000000000",
+        "sin": "0x3ca1a62633145c07"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "ordinary-270",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0xbcaa79394c9e8a0a",
+        "sin": "0xbff0000000000000"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "ordinary-360",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3ff0000000000000",
+        "sin": "0xbcb1a62633145c07"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "negative-angle",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 1,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3fe6a09e667f3bcd",
+        "sin": "0xbfe6a09e667f3bcc"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "adjacent-45",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 6485328709579050,
+        "y": 1
+      },
+      "trig_bits": {
+        "cos": "0x3fe6a09e667f3bcd",
+        "sin": "0x3fe6a09e667f3bcc"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "adjacent-90",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3c91a62633145c07",
+        "sin": "0x3ff0000000000000"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "adjacent-180",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0xbff0000000000000",
+        "sin": "0x3ca1a62633145c07"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "adjacent-270",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0xbcaa79394c9e8a0a",
+        "sin": "0xbff0000000000000"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "adjacent-360",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 0,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3ff0000000000000",
+        "sin": "0xbcb1a62633145c07"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "large-cancellation",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 6485328709579051,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3fe6a09e667f3bcd",
+        "sin": "0x3fe6a09e667f3bcc"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "large-opposite",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 6048990701490383,
+        "y": 1
+      },
+      "trig_bits": {
+        "cos": "0x3fe6a09e667f3bcd",
+        "sin": "0x3fe6a09e667f3bcc"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "huge-angle",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": true,
+        "y": true
+      },
+      "output_ulp_difference_if_unique": {
+        "x": 1,
+        "y": 0
+      },
+      "trig_bits": {
+        "cos": "0x3fc79e94811b8193",
+        "sin": "0xbfef73528c9af410"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": true,
+        "sin": true
+      },
+      "trig_unique_binary64": {
+        "cos": true,
+        "sin": true
+      }
+    },
+    {
+      "id": "max-angle",
+      "model_a_model_b_containment": false,
+      "output_cell_unique": {
+        "x": false,
+        "y": false
+      },
+      "output_ulp_difference_if_unique": {
+        "x": null,
+        "y": null
+      },
+      "trig_bits": {
+        "cos": "0xfff8000000000000",
+        "sin": "0xfff8000000000000"
+      },
+      "trig_interval_contains_js": false,
+      "trig_js_uniquely_rounded": {
+        "cos": null,
+        "sin": null
+      },
+      "trig_unique_binary64": {
+        "cos": false,
+        "sin": false
+      }
+    }
+  ]
+}

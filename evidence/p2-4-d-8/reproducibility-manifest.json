@@ -1,0 +1,75 @@
+{
+  "artifacts": [
+    {
+      "bytes": 17640,
+      "file": "evidence/p2-4-d-8/d8-binary64-results.json",
+      "sha256": "38495ae329208bcbee1e0d2a10bf761589d59cd122feee5c333f45dd9a9d3aed"
+    },
+    {
+      "bytes": 180134,
+      "file": "evidence/p2-4-d-8/d8-javascript-capture.json",
+      "sha256": "c0d70084d62d0372affd33471b8d15a945a4ad165262a5717e6b5ee8e3a2e09d"
+    },
+    {
+      "bytes": 87962,
+      "file": "evidence/p2-4-d-8/d8-mpfr-results.json",
+      "sha256": "cb94a59f60a86dae6c63df0442f94c94e516328517c94dccd682381a70ac6db7"
+    },
+    {
+      "bytes": 6769,
+      "file": "evidence/p2-4-d-8/d8_independent_analysis.py",
+      "sha256": "aeb9916ea0ebfb6c27e9d069b386ca2fe5f1e3ab4fd5d6e11af32acabf3ab73f"
+    },
+    {
+      "bytes": 185193,
+      "file": "evidence/p2-4-d-8/javascript-ieee754-semantics.json",
+      "sha256": "5668ab0622e998031716c1e1b7d949dd9e68c358427927a292315ea2b32e0ea8"
+    },
+    {
+      "bytes": 1905,
+      "file": "evidence/p2-4-d-8/js_semantics_probe.mjs",
+      "sha256": "02dd54f9ea284a8d8afc3a5f182092a9de7618de0bba39dc0fde11ce9e223cf9"
+    },
+    {
+      "bytes": 1170,
+      "file": "evidence/p2-4-d-8/mpfr-signed-zero-semantics.json",
+      "sha256": "6f39a67ee687d859c6fd4aadf7f7952ca3514c22d2b5bfc6ff150e32be02093a"
+    },
+    {
+      "bytes": 850,
+      "file": "evidence/p2-4-d-8/mpfr_signed_zero_probe.py",
+      "sha256": "2fdc1b1db820f73cd2482990f3f411ef228ad2b7d39bdabe5b550e139ea9dc77"
+    },
+    {
+      "bytes": 376,
+      "file": "evidence/p2-4-d-8/source-attestation.json",
+      "sha256": "01ad957c154b6ef1a6a799871ecf3829cb863a752c273780acba6f0dab2033f7"
+    },
+    {
+      "bytes": 34339,
+      "file": "evidence/p2-4-d-8/unresolved-case-inventory.json",
+      "sha256": "868f1b9cdf1388f412876feb3eed5815b22106afe786b5826eb0662668e885fd"
+    }
+  ],
+  "branch": "evidence/phase6-1-p2-4-d-8-independent-gap-closure-20261128",
+  "commands": [
+    "PCB_SOURCE_WORKTREE=/tmp/p24d7-source PCB_EXPECTED_SOURCE_SHA=941262899a46e54cbf1a94a4da6dd528b8d36780 ... capture.ts",
+    "analyze.py ... mpfr_eval.py",
+    "binary64_suite.py",
+    "python3 -m unittest discover -s ... -p evidence_tests.py",
+    "d8_independent_analysis.py",
+    "js_semantics_probe.mjs",
+    "mpfr_signed_zero_probe.py"
+  ],
+  "d7_evidence_head": "0690d038859ffaa614776a1a9d36282a9727747e",
+  "d7_report_commit": "9fc6b2cae447b0669833b510aa9979cd80abd43b",
+  "expected_source_attestation": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+  "phase": "P2.4-D-8",
+  "runtime": {
+    "gmpy2": "2.3.2",
+    "node": "v22.23.4",
+    "python": "3.12.3"
+  },
+  "source_baseline": "327fc0479031279b889ea1dd1140a23d4abe442f",
+  "source_worktree": "/tmp/p24d7-source"
+}

@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "dirtyStatus": "",
+  "expectedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+  "file": {
+    "bytes": 81255,
+    "path": "/tmp/p24d7-source/shared/engineering.ts",
+    "sha256": "545038007080da77f36e8e3bf3bab6945b6ad8bd949536fca9069cdcbf3164e9"
+  },
+  "observedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+  "sourceRoot": "/tmp/p24d7-source"
+}

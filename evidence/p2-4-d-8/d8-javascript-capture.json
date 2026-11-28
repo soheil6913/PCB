@@ -1,0 +1,6570 @@
+{
+  "attestation": {
+    "sourceRoot": "/tmp/p24d7-source",
+    "expectedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "observedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "dirtyStatus": "",
+    "files": [
+      {
+        "file": "shared/engineering.ts",
+        "absolute": "/tmp/p24d7-source/shared/engineering.ts",
+        "sha256": "545038007080da77f36e8e3bf3bab6945b6ad8bd949536fca9069cdcbf3164e9",
+        "bytes": 81255
+      }
+    ],
+    "filesAfter": [
+      {
+        "file": "shared/engineering.ts",
+        "sha256": "545038007080da77f36e8e3bf3bab6945b6ad8bd949536fca9069cdcbf3164e9"
+      }
+    ]
+  },
+  "expressions": {
+    "source_sha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "route45": {
+      "line": 59,
+      "expression": "dx = end.x - start.x; dy = end.y - start.y; Math.abs(dx); Math.abs(dy); Math.min(abs(dx), abs(dy)); start.x + Math.sign(dx) * diagonal"
+    },
+    "rotatePoint": {
+      "line": 57,
+      "expression": "radians = degrees * Math.PI / 180; cos = Math.cos(radians); sin = Math.sin(radians); x = point.x * cos - point.y * sin; y = point.x * sin + point.y * cos"
+    },
+    "transformLocalPoint": {
+      "line": 58,
+      "expression": "rotated = rotatePoint(local, rotation); x = origin.x + rotated.x; y = origin.y + rotated.y"
+    },
+    "degree_radian_order": "degrees * Math.PI / 180 (left associative: multiplication then division)"
+  },
+  "runtime": {
+    "node": "v22.23.4",
+    "v8": "12.4.254.21-node.57",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "vectors": [
+    {
+      "id": "ordinary-0",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "10",
+            "bits": "0x4024000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-20",
+            "bits": "0xc034000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "0",
+          "bits": "0x0000000000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0",
+          "bits": "0x0000000000000000",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "11.25",
+            "bits": "0x4026800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-22.5",
+            "bits": "0xc036800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.25",
+            "bits": "0x3ff4000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2.5",
+            "bits": "0xc004000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "11.25",
+            "bits": "0x4026800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-22.5",
+            "bits": "0xc036800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1.25,
+            "y": -2.5
+          },
+          {
+            "x": 10,
+            "y": -2.5
+          },
+          {
+            "x": 10,
+            "y": -20
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1.25,
+            "y": -2.5
+          },
+          {
+            "x": 10,
+            "y": -2.5
+          },
+          {
+            "x": 10,
+            "y": -20
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "8.75",
+            "bits": "0x4021800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-17.5",
+            "bits": "0xc031800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "8.75",
+            "bits": "0x4021800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "17.5",
+            "bits": "0x4031800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "8.75",
+            "bits": "0x4021800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "8.75",
+            "bits": "0x4021800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "10",
+            "bits": "0x4024000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1.25,
+          "y": -2.5
+        },
+        "transform": {
+          "x": 11.25,
+          "y": -22.5
+        }
+      },
+      "rad_bits": "0x0000000000000000",
+      "x_bits": "0x3ff4000000000000",
+      "y_bits": "0xc004000000000000",
+      "ox_bits": "0x4024000000000000",
+      "oy_bits": "0xc034000000000000"
+    },
+    {
+      "id": "ordinary-45",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-200",
+            "bits": "0xc069000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "45",
+          "bits": "0x4046800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0.7853981633974483",
+          "bits": "0x3fe921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "4.949747468305833",
+            "bits": "0x4013cc8a99af5453",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-0.7071067811865479",
+            "bits": "0xbfe6a09e667f3bd0",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "2.121320343559643",
+            "bits": "0x4000f876ccdf6cda",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-2.82842712474619",
+            "bits": "0xc006a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "4.949747468305833",
+            "bits": "0x4013cc8a99af5453",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "2.1213203435596424",
+            "bits": "0x4000f876ccdf6cd9",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.8284271247461903",
+            "bits": "0xc006a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.7071067811865479",
+            "bits": "0xbfe6a09e667f3bd0",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "104.94974746830583",
+            "bits": "0x405a3cc8a99af545",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-200.70710678118655",
+            "bits": "0xc06916a09e667f3c",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "2.121320343559643",
+            "bits": "0x4000f876ccdf6cda",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-2.82842712474619",
+            "bits": "0xc006a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "4.949747468305833",
+            "bits": "0x4013cc8a99af5453",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "2.1213203435596424",
+            "bits": "0x4000f876ccdf6cd9",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.8284271247461903",
+            "bits": "0xc006a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.7071067811865479",
+            "bits": "0xbfe6a09e667f3bd0",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "104.94974746830583",
+            "bits": "0x405a3cc8a99af545",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-200.70710678118655",
+            "bits": "0xc06916a09e667f3c",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "196",
+            "bits": "0x4068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "99",
+            "bits": "0x4058c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 4.949747468305833,
+          "y": -0.7071067811865479
+        },
+        "transform": {
+          "x": 104.94974746830583,
+          "y": -200.70710678118655
+        }
+      },
+      "rad_bits": "0x3fe921fb54442d18",
+      "x_bits": "0x4008000000000000",
+      "y_bits": "0xc010000000000000",
+      "ox_bits": "0x4059000000000000",
+      "oy_bits": "0xc069000000000000"
+    },
+    {
+      "id": "ordinary-90",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-200",
+            "bits": "0xc069000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "90",
+          "bits": "0x4056800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "1.5707963267948966",
+          "bits": "0x3ff921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "2.9999999999999996",
+            "bits": "0x4007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "282.7433388230814",
+            "bits": "0x4071abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "1.5707963267948966",
+            "bits": "0x3ff921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.8369701987210297e-16",
+            "bits": "0x3caa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "2.9999999999999996",
+            "bits": "0x4007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "104",
+            "bits": "0x405a000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-197",
+            "bits": "0xc068a00000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "282.7433388230814",
+            "bits": "0x4071abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "1.5707963267948966",
+            "bits": "0x3ff921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.8369701987210297e-16",
+            "bits": "0x3caa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "2.9999999999999996",
+            "bits": "0x4007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "104",
+            "bits": "0x405a000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-197",
+            "bits": "0xc068a00000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "196",
+            "bits": "0x4068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "99",
+            "bits": "0x4058c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 4,
+          "y": 2.9999999999999996
+        },
+        "transform": {
+          "x": 104,
+          "y": -197
+        }
+      },
+      "rad_bits": "0x3ff921fb54442d18",
+      "x_bits": "0x4008000000000000",
+      "y_bits": "0xc010000000000000",
+      "ox_bits": "0x4059000000000000",
+      "oy_bits": "0xc069000000000000"
+    },
+    {
+      "id": "ordinary-180",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-200",
+            "bits": "0xc069000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "180",
+          "bits": "0x4066800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "3.141592653589793",
+          "bits": "0x400921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "-2.9999999999999996",
+            "bits": "0xc007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "565.4866776461628",
+            "bits": "0x4081abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "3.141592653589793",
+            "bits": "0x400921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-3",
+            "bits": "0xc008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-4.898587196589413e-16",
+            "bits": "0xbcc1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-2.9999999999999996",
+            "bits": "0xc007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "3.6739403974420594e-16",
+            "bits": "0x3cba79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "565.4866776461628",
+            "bits": "0x4081abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "3.141592653589793",
+            "bits": "0x400921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-3",
+            "bits": "0xc008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-4.898587196589413e-16",
+            "bits": "0xbcc1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-2.9999999999999996",
+            "bits": "0xc007ffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "3.6739403974420594e-16",
+            "bits": "0x3cba79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "196",
+            "bits": "0x4068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "99",
+            "bits": "0x4058c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": -2.9999999999999996,
+          "y": 4
+        },
+        "transform": {
+          "x": 97,
+          "y": -196
+        }
+      },
+      "rad_bits": "0x400921fb54442d18",
+      "x_bits": "0x4008000000000000",
+      "y_bits": "0xc010000000000000",
+      "ox_bits": "0x4059000000000000",
+      "oy_bits": "0xc069000000000000"
+    },
+    {
+      "id": "ordinary-270",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-200",
+            "bits": "0xc069000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "270",
+          "bits": "0x4070e00000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "4.71238898038469",
+          "bits": "0x4012d97c7f3321d2",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-2.999999999999999",
+            "bits": "0xc007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "848.2300164692441",
+            "bits": "0x408a81d712dfe78f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "4.71238898038469",
+            "bits": "0x4012d97c7f3321d2",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-5.51091059616309e-16",
+            "bits": "0xbcc3daeaf976e788",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-3",
+            "bits": "0xc008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "7.347880794884119e-16",
+            "bits": "0x3cca79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2.999999999999999",
+            "bits": "0xc007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "96",
+            "bits": "0x4058000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-203",
+            "bits": "0xc069600000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "848.2300164692441",
+            "bits": "0x408a81d712dfe78f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "4.71238898038469",
+            "bits": "0x4012d97c7f3321d2",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-5.51091059616309e-16",
+            "bits": "0xbcc3daeaf976e788",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-3",
+            "bits": "0xc008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "7.347880794884119e-16",
+            "bits": "0x3cca79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2.999999999999999",
+            "bits": "0xc007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "96",
+            "bits": "0x4058000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-203",
+            "bits": "0xc069600000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "196",
+            "bits": "0x4068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "99",
+            "bits": "0x4058c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": -4.000000000000001,
+          "y": -2.999999999999999
+        },
+        "transform": {
+          "x": 96,
+          "y": -203
+        }
+      },
+      "rad_bits": "0x4012d97c7f3321d2",
+      "x_bits": "0x4008000000000000",
+      "y_bits": "0xc010000000000000",
+      "ox_bits": "0x4059000000000000",
+      "oy_bits": "0xc069000000000000"
+    },
+    {
+      "id": "ordinary-360",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "-200",
+            "bits": "0xc069000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "360",
+          "bits": "0x4076800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "6.283185307179586",
+          "bits": "0x401921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "2.999999999999999",
+            "bits": "0x4007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1130.9733552923256",
+            "bits": "0x4091abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "6.283185307179586",
+            "bits": "0x401921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "9.797174393178826e-16",
+            "bits": "0x3cd1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "2.999999999999999",
+            "bits": "0x4007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-7.347880794884119e-16",
+            "bits": "0xbcca79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "103",
+            "bits": "0x4059c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-204",
+            "bits": "0xc069800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1130.9733552923256",
+            "bits": "0x4091abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "6.283185307179586",
+            "bits": "0x401921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "9.797174393178826e-16",
+            "bits": "0x3cd1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "2.999999999999999",
+            "bits": "0x4007fffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-7.347880794884119e-16",
+            "bits": "0xbcca79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-4",
+            "bits": "0xc010000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-4.000000000000001",
+            "bits": "0xc010000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "103",
+            "bits": "0x4059c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-204",
+            "bits": "0xc069800000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 3,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -4
+          },
+          {
+            "x": 100,
+            "y": -200
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-196",
+            "bits": "0xc068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "196",
+            "bits": "0x4068800000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "99",
+            "bits": "0x4058c00000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "97",
+            "bits": "0x4058400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "100",
+            "bits": "0x4059000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 2.999999999999999,
+          "y": -4.000000000000001
+        },
+        "transform": {
+          "x": 103,
+          "y": -204
+        }
+      },
+      "rad_bits": "0x401921fb54442d18",
+      "x_bits": "0x4008000000000000",
+      "y_bits": "0xc010000000000000",
+      "ox_bits": "0x4059000000000000",
+      "oy_bits": "0xc069000000000000"
+    },
+    {
+      "id": "negative-angle",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1000",
+            "bits": "0x408f400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-2000",
+            "bits": "0xc09f400000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "-4000",
+            "bits": "0xc0af400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "5000",
+            "bits": "0x40b3880000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "-45",
+          "bits": "0xc046800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "-0.7853981633974483",
+          "bits": "0xbfe921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "-707.1067811865473",
+            "bits": "0xc08618dab0184064",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-2121.3203435596424",
+            "bits": "0xc0a092a40412304c",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "-141.3716694115407",
+            "bits": "0xc061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "-0.7853981633974483",
+            "bits": "0xbfe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-0.7071067811865475",
+            "bits": "0xbfe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "707.1067811865476",
+            "bits": "0x408618dab0184066",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1414.2135623730949",
+            "bits": "0x409618dab0184065",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-707.1067811865473",
+            "bits": "0xc08618dab0184064",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-707.1067811865474",
+            "bits": "0xc08618dab0184065",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1414.213562373095",
+            "bits": "0xc09618dab0184066",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2121.3203435596424",
+            "bits": "0xc0a092a40412304c",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "-4707.106781186547",
+            "bits": "0xc0b2631b5603080c",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "2878.6796564403576",
+            "bits": "0x40a67d5bfbedcfb4",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "-141.3716694115407",
+            "bits": "0xc061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "-0.7853981633974483",
+            "bits": "0xbfe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-0.7071067811865475",
+            "bits": "0xbfe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "707.1067811865476",
+            "bits": "0x408618dab0184066",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1414.2135623730949",
+            "bits": "0x409618dab0184065",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-707.1067811865473",
+            "bits": "0xc08618dab0184064",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-707.1067811865474",
+            "bits": "0xc08618dab0184065",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1414.213562373095",
+            "bits": "0xc09618dab0184066",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-2121.3203435596424",
+            "bits": "0xc0a092a40412304c",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "-4707.106781186547",
+            "bits": "0xc0b2631b5603080c",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "2878.6796564403576",
+            "bits": "0x40a67d5bfbedcfb4",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1000,
+            "y": -2000
+          },
+          {
+            "x": -4000,
+            "y": -2000
+          },
+          {
+            "x": -4000,
+            "y": 5000
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1000,
+            "y": -2000
+          },
+          {
+            "x": -4000,
+            "y": -2000
+          },
+          {
+            "x": -4000,
+            "y": 5000
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-5000",
+            "bits": "0xc0b3880000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "7000",
+            "bits": "0x40bb580000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "5000",
+            "bits": "0x40b3880000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "7000",
+            "bits": "0x40bb580000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "2000",
+            "bits": "0x409f400000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "5000",
+            "bits": "0x40b3880000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "-4000",
+            "bits": "0xc0af400000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": -707.1067811865473,
+          "y": -2121.3203435596424
+        },
+        "transform": {
+          "x": -4707.106781186547,
+          "y": 2878.6796564403576
+        }
+      },
+      "rad_bits": "0xbfe921fb54442d18",
+      "x_bits": "0x408f400000000000",
+      "y_bits": "0xc09f400000000000",
+      "ox_bits": "0xc0af400000000000",
+      "oy_bits": "0x40b3880000000000"
+    },
+    {
+      "id": "adjacent-45",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "45",
+          "bits": "0x4046800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0.7853981633974483",
+          "bits": "0x3fe921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1.1102230246251565e-16",
+            "bits": "0x3ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "1.414213562373095",
+            "bits": "0x3ff6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.1102230246251565e-16",
+            "bits": "0x3ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "1.414213562373095",
+            "bits": "0x3ff6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "1.1102230246251565e-16",
+            "bits": "0x3ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "1.414213562373095",
+            "bits": "0x3ff6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.1102230246251565e-16",
+            "bits": "0x3ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "1.414213562373095",
+            "bits": "0x3ff6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "1.1102230246251565e-16",
+            "bits": "0x3ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "1.414213562373095",
+            "bits": "0x3ff6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1.1102230246251565e-16,
+          "y": 1.414213562373095
+        },
+        "transform": {
+          "x": 1.1102230246251565e-16,
+          "y": 1.414213562373095
+        }
+      },
+      "rad_bits": "0x3fe921fb54442d18",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x3ff0000000000000",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "adjacent-90",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "90",
+          "bits": "0x4056800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "1.5707963267948966",
+          "bits": "0x3ff921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "0.9999999999999999",
+            "bits": "0x3fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "282.7433388230814",
+            "bits": "0x4071abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "1.5707963267948966",
+            "bits": "0x3ff921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-6.123233995736766e-17",
+            "bits": "0xbc91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0.9999999999999999",
+            "bits": "0x3fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "0.9999999999999999",
+            "bits": "0x3fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "282.7433388230814",
+            "bits": "0x4071abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "1.5707963267948966",
+            "bits": "0x3ff921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "6.123233995736766e-17",
+            "bits": "0x3c91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-6.123233995736766e-17",
+            "bits": "0xbc91a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0.9999999999999999",
+            "bits": "0x3fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "0.9999999999999999",
+            "bits": "0x3fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": -1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": -1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1,
+          "y": 0.9999999999999999
+        },
+        "transform": {
+          "x": 1,
+          "y": 0.9999999999999999
+        }
+      },
+      "rad_bits": "0x3ff921fb54442d18",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0xbff0000000000000",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "adjacent-180",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "180",
+          "bits": "0x4066800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "3.141592653589793",
+          "bits": "0x400921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-0.9999999999999999",
+            "bits": "0xbfefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "565.4866776461628",
+            "bits": "0x4081abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "3.141592653589793",
+            "bits": "0x400921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.9999999999999999",
+            "bits": "0xbfefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-0.9999999999999999",
+            "bits": "0xbfefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "565.4866776461628",
+            "bits": "0x4081abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "3.141592653589793",
+            "bits": "0x400921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.2246467991473532e-16",
+            "bits": "0x3ca1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.9999999999999999",
+            "bits": "0xbfefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-0.9999999999999999",
+            "bits": "0xbfefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": -1.0000000000000002,
+          "y": -0.9999999999999999
+        },
+        "transform": {
+          "x": -1.0000000000000002,
+          "y": -0.9999999999999999
+        }
+      },
+      "rad_bits": "0x400921fb54442d18",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x3ff0000000000000",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "adjacent-270",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "270",
+          "bits": "0x4070e00000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "4.71238898038469",
+          "bits": "0x4012d97c7f3321d2",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "848.2300164692441",
+            "bits": "0x408a81d712dfe78f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "4.71238898038469",
+            "bits": "0x4012d97c7f3321d2",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "848.2300164692441",
+            "bits": "0x408a81d712dfe78f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "4.71238898038469",
+            "bits": "0x4012d97c7f3321d2",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.8369701987210297e-16",
+            "bits": "0xbcaa79394c9e8a0a",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-1.0000000000000002",
+            "bits": "0xbff0000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 0.9999999999999998,
+          "y": -1.0000000000000002
+        },
+        "transform": {
+          "x": 0.9999999999999998,
+          "y": -1.0000000000000002
+        }
+      },
+      "rad_bits": "0x4012d97c7f3321d2",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x3ff0000000000000",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "adjacent-360",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "360",
+          "bits": "0x4076800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "6.283185307179586",
+          "bits": "0x401921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1.0000000000000002",
+            "bits": "0x3ff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1130.9733552923256",
+            "bits": "0x4091abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "6.283185307179586",
+            "bits": "0x401921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.0000000000000002",
+            "bits": "0x3ff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "1.0000000000000002",
+            "bits": "0x3ff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1130.9733552923256",
+            "bits": "0x4091abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "6.283185307179586",
+            "bits": "0x401921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.0000000000000002",
+            "bits": "0x3ff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-2.4492935982947064e-16",
+            "bits": "0xbcb1a62633145c07",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "1.0000000000000002",
+            "bits": "0x3ff0000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "0.9999999999999998",
+            "bits": "0x3feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1.0000000000000002,
+          "y": 0.9999999999999998
+        },
+        "transform": {
+          "x": 1.0000000000000002,
+          "y": 0.9999999999999998
+        }
+      },
+      "rad_bits": "0x401921fb54442d18",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x3ff0000000000000",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "large-cancellation",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "45",
+          "bits": "0x4046800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0.7853981633974483",
+          "bits": "0x3fe921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1.99584030953472e+292",
+            "bits": "0x7ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.99584030953472e+292",
+            "bits": "0x7ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "1.99584030953472e+292",
+            "bits": "0x7ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.99584030953472e+292",
+            "bits": "0x7ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "1.99584030953472e+292",
+            "bits": "0x7ca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1.99584030953472e+292,
+          "y": null
+        },
+        "transform": {
+          "x": 1.99584030953472e+292,
+          "y": null
+        }
+      },
+      "rad_bits": "0x3fe921fb54442d18",
+      "x_bits": "0x7fefffffffffffff",
+      "y_bits": "0x7fefffffffffffff",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "large-opposite",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "45",
+          "bits": "0x4046800000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0.7853981633974483",
+          "bits": "0x3fe921fb54442d18",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-1.99584030953472e+292",
+            "bits": "0xfca0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1.271161006153646e+308",
+            "bits": "0xffe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.2711610061536462e+308",
+            "bits": "0xffe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.99584030953472e+292",
+            "bits": "0xfca0000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "1.7976931348623155e+308",
+            "bits": "0x7feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "141.3716694115407",
+            "bits": "0x4061abe4b73fefb5",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0.7853981633974483",
+            "bits": "0x3fe921fb54442d18",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.7071067811865476",
+            "bits": "0x3fe6a09e667f3bcd",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0.7071067811865475",
+            "bits": "0x3fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.2711610061536462e+308",
+            "bits": "0x7fe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1.271161006153646e+308",
+            "bits": "0xffe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "1.271161006153646e+308",
+            "bits": "0x7fe6a09e667f3bcb",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.2711610061536462e+308",
+            "bits": "0xffe6a09e667f3bcc",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.99584030953472e+292",
+            "bits": "0xfca0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "1.7976931348623155e+308",
+            "bits": "0x7feffffffffffffe",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": null,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": -1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": null,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": -1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-Infinity",
+            "bits": "0xfff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "NaN",
+            "bits": "0x7ff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "-Infinity",
+            "bits": "0xfff0000000000000",
+            "finite": false,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": null,
+          "y": -1.99584030953472e+292
+        },
+        "transform": {
+          "x": null,
+          "y": 1.7976931348623155e+308
+        }
+      },
+      "rad_bits": "0x3fe921fb54442d18",
+      "x_bits": "0x7fefffffffffffff",
+      "y_bits": "0xffefffffffffffff",
+      "ox_bits": "0xffefffffffffffff",
+      "oy_bits": "0x7fefffffffffffff"
+    },
+    {
+      "id": "subnormal",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "5e-324",
+          "bits": "0x0000000000000001",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0",
+          "bits": "0x0000000000000000",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1.5e-323",
+            "bits": "0x0000000000000003",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "1.5e-323",
+            "bits": "0x0000000000000003",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 5e-324,
+            "y": -5e-324
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 5e-324,
+            "y": -5e-324
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "-5e-324",
+            "bits": "0x8000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "5e-324",
+            "bits": "0x0000000000000001",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "-1",
+            "bits": "0xbff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 5e-324,
+          "y": -5e-324
+        },
+        "transform": {
+          "x": 5e-324,
+          "y": -5e-324
+        }
+      },
+      "rad_bits": "0x0000000000000000",
+      "x_bits": "0x0000000000000001",
+      "y_bits": "0x8000000000000001",
+      "ox_bits": "0x0000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "signed-zero",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "0",
+          "bits": "0x8000000000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0",
+          "bits": "0x8000000000000000",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 0,
+          "y": 0
+        },
+        "transform": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "rad_bits": "0x8000000000000000",
+      "x_bits": "0x8000000000000000",
+      "y_bits": "0x0000000000000000",
+      "ox_bits": "0x8000000000000000",
+      "oy_bits": "0x0000000000000000"
+    },
+    {
+      "id": "huge-angle",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "10000000000000000",
+          "bits": "0x4341c37937e08000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "174532925199432.97",
+          "bits": "0x42e3d793a042891f",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "2.1501818774033983",
+            "bits": "0x400133928e5f3221",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-0.6137734876043417",
+            "bits": "0xbfe3a4084c0d3346",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "31415926535897932",
+            "bits": "0x435be727995d90d3",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "174532925199432.97",
+            "bits": "0x42e3d793a042891f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.18452698043894297",
+            "bits": "0x3fc79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-0.9828274484822277",
+            "bits": "0xbfef73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0.18452698043894297",
+            "bits": "0x3fc79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1.9656548969644554",
+            "bits": "0xbfff73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "2.1501818774033983",
+            "bits": "0x400133928e5f3221",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-0.9828274484822277",
+            "bits": "0xbfef73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0.36905396087788594",
+            "bits": "0x3fd79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.6137734876043417",
+            "bits": "0xbfe3a4084c0d3346",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "5.150181877403398",
+            "bits": "0x401499c9472f9910",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "3.386226512395658",
+            "bits": "0x400b16fdecfcb32e",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "31415926535897932",
+            "bits": "0x435be727995d90d3",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "174532925199432.97",
+            "bits": "0x42e3d793a042891f",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "0.18452698043894297",
+            "bits": "0x3fc79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "-0.9828274484822277",
+            "bits": "0xbfef73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "0.18452698043894297",
+            "bits": "0x3fc79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "-1.9656548969644554",
+            "bits": "0xbfff73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "2.1501818774033983",
+            "bits": "0x400133928e5f3221",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "-0.9828274484822277",
+            "bits": "0xbfef73528c9af410",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "0.36905396087788594",
+            "bits": "0x3fd79e94811b8193",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-0.6137734876043417",
+            "bits": "0xbfe3a4084c0d3346",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "5.150181877403398",
+            "bits": "0x401499c9472f9910",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "3.386226512395658",
+            "bits": "0x400b16fdecfcb32e",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 3,
+            "y": 4
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 3,
+            "y": 4
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 2.1501818774033983,
+          "y": -0.6137734876043417
+        },
+        "transform": {
+          "x": 5.150181877403398,
+          "y": 3.386226512395658
+        }
+      },
+      "rad_bits": "0x42e3d793a042891f",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x4000000000000000",
+      "ox_bits": "0x4008000000000000",
+      "oy_bits": "0x4010000000000000"
+    },
+    {
+      "id": "max-angle",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "4",
+            "bits": "0x4010000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "1.7976931348623157e+308",
+          "bits": "0x7fefffffffffffff",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "Infinity",
+          "bits": "0x7ff0000000000000",
+          "finite": false,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "NaN",
+            "bits": "0xfff8000000000000",
+            "finite": false,
+            "isNaN": true
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 3,
+            "y": 4
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 3,
+            "y": 4
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "2",
+            "bits": "0x4000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "3",
+            "bits": "0x4008000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": null,
+          "y": null
+        },
+        "transform": {
+          "x": null,
+          "y": null
+        }
+      },
+      "rad_bits": "0x7ff0000000000000",
+      "x_bits": "0x3ff0000000000000",
+      "y_bits": "0x4000000000000000",
+      "ox_bits": "0x4008000000000000",
+      "oy_bits": "0x4010000000000000"
+    },
+    {
+      "id": "overflow-translation",
+      "input": {
+        "local": {
+          "x": {
+            "operation": "input.local.x",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.local.y",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "origin": {
+          "x": {
+            "operation": "input.origin.x",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "input.origin.y",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "degrees": {
+          "operation": "input.degrees",
+          "decimal": "0",
+          "bits": "0x0000000000000000",
+          "finite": true,
+          "isNaN": false
+        },
+        "radians": {
+          "operation": "radians",
+          "decimal": "0",
+          "bits": "0x0000000000000000",
+          "finite": true,
+          "isNaN": false
+        }
+      },
+      "rotate": {
+        "source_result": {
+          "x": {
+            "operation": "final.rotate.x",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.rotate.y",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "transform": {
+        "source_result": {
+          "x": {
+            "operation": "final.transform.x",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          "y": {
+            "operation": "final.transform.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        },
+        "steps": [
+          {
+            "operation": "degrees * Math.PI",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "(degrees * Math.PI) / 180",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.cos(radians)",
+            "decimal": "1",
+            "bits": "0x3ff0000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sin(radians)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * cos",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * sin",
+            "decimal": "0",
+            "bits": "0x8000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xProduct - yProduct",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.x * sin",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "point.y * cos",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "xSin + yCos",
+            "decimal": "-1.7976931348623157e+308",
+            "bits": "0xffefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.x + rotated.x",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "origin.y + rotated.y",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "route": {
+        "result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": 1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          }
+        ],
+        "actual_source_result": [
+          {
+            "x": 1.7976931348623157e+308,
+            "y": -1.7976931348623157e+308
+          },
+          {
+            "x": 1.7976931348623157e+308,
+            "y": 1.7976931348623157e+308
+          }
+        ],
+        "steps": [
+          {
+            "operation": "end.x - start.x",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "end.y - start.y",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dx)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(dy)",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.abs(Math.abs(dx) - Math.abs(dy))",
+            "decimal": "Infinity",
+            "bits": "0x7ff0000000000000",
+            "finite": false,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.min(Math.abs(dx), Math.abs(dy))",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "Math.sign(dx)",
+            "decimal": "0",
+            "bits": "0x0000000000000000",
+            "finite": true,
+            "isNaN": false
+          },
+          {
+            "operation": "start.x + Math.sign(dx) * diagonal",
+            "decimal": "1.7976931348623157e+308",
+            "bits": "0x7fefffffffffffff",
+            "finite": true,
+            "isNaN": false
+          }
+        ]
+      },
+      "source_runtime": {
+        "rotate": {
+          "x": 1.7976931348623157e+308,
+          "y": -1.7976931348623157e+308
+        },
+        "transform": {
+          "x": null,
+          "y": 0
+        }
+      },
+      "rad_bits": "0x0000000000000000",
+      "x_bits": "0x7fefffffffffffff",
+      "y_bits": "0xffefffffffffffff",
+      "ox_bits": "0x7fefffffffffffff",
+      "oy_bits": "0x7fefffffffffffff"
+    }
+  ]
+}
