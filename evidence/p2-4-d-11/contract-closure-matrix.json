@@ -1,0 +1,75 @@
+{
+  "report": "PHASE_6_1_P2_4_D_11_GEOMETRY_REMEDIATION_CONTRACT_CLOSURE_REPORT.md",
+  "phase": "P2.4-D-11",
+  "decision": "CONDITIONALLY_READY",
+  "implementation_authorized": false,
+  "contract_questions": [
+    {
+      "id": "Q1",
+      "topic": "route45 legacy behavior and NON_REPRESENTABLE client behavior",
+      "status": "CLOSED_CONDITIONALLY",
+      "decision": "route45Checked is authoritative; finite NON_REPRESENTABLE returns an endpoint-only [start,end] compatibility wrapper result, never a claimed route45 invariant. Invalid input returns [] through the legacy wrapper. The client must use the checked result, may create only a separately labelled certified direct route, and otherwise creates no track.",
+      "pre_implementation_gate": "Lock ordinary output, invalid-input, endpoint-only fallback, transactional no-partial-track, and direct-route labelling fixtures."
+    },
+    {
+      "id": "Q2",
+      "topic": "certified trigonometric coefficient provider and angle semantics",
+      "status": "CLOSED_CONDITIONALLY",
+      "decision": "Do not certify Math.sin or Math.cos. Use a documented dependency-free interval kernel with exact binary64 angle decomposition, conservative range reduction, bounded polynomial/remainder error, outward widening, exact quadrant reconstruction, and INDETERMINATE on branch ambiguity. Exact identities apply only to proven special-angle inputs; 45-degree coefficients are enclosed, not exact.",
+      "pre_implementation_gate": "Independently review constants, reduction bounds, polynomial remainder, outward-rounding method, runtime support, and an oracle corpus before arbitrary-angle VALID results are permitted."
+    },
+    {
+      "id": "Q3",
+      "topic": "precise VALID transform output criterion",
+      "status": "CLOSED_CONDITIONALLY",
+      "decision": "VALID requires the complete finite outward enclosure of the transformed coordinate to lie strictly inside one IEEE-754 binary64 round-to-nearest-even output cell, or a proven tie-to-even boundary case. Cell boundaries must cover zero, subnormals, binade transitions, signed zero, and the largest finite value.",
+      "pre_implementation_gate": "Review and test the output-cell reference implementation, nextUp/nextDown behavior, ties, subnormal boundaries, and overflow classification."
+    },
+    {
+      "id": "Q4",
+      "topic": "interval ellipse distance proof budget and DRC threshold semantics",
+      "status": "CLOSED_CONDITIONALLY",
+      "decision": "Use deterministic adaptive interval branch-and-bound after analytic/broad-phase proofs, with MAX_CERTIFIED_CELLS=4096, MAX_INTERVAL_EVALUATIONS=32768, and MAX_SUBDIVISION_DEPTH=32. Exhaustion is INDETERMINATE with stable diagnostics; it never becomes zero, a clearance pass, or a GJK policy change. A DRC threshold comparison is positive/pass only when a certified finite result proves the relationship; uncertainty is Error-severity PCB_GEOMETRY_INDETERMINATE.",
+      "pre_implementation_gate": "Approve the budgets after independent-oracle validation and ordinary/adversarial performance measurement; verify deterministic counters and fail-closed propagation."
+    },
+    {
+      "id": "Q5",
+      "topic": "public rotatePoint/transformLocalPoint compatibility boundary",
+      "status": "CLOSED_CONDITIONALLY",
+      "decision": "Preserve public signatures and ordinary best-effort behavior. Add internal checked transforms carrying VALID, INDETERMINATE, NON_REPRESENTABLE, and INVALID states; all new DRC/topology/engineering consumers use checked transforms. Public output is never presented as proof-bearing VALID output and a future checked public API requires separate approval.",
+      "pre_implementation_gate": "Freeze ordinary public fixtures, audit new call sites, test public-versus-checked divergence at cancellation extremes, and verify localized pad/pin propagation."
+    }
+  ],
+  "findings": [
+    {
+      "id": "P24D-ROUTE45-OVERFLOW",
+      "status": "ACCEPTANCE_DEFINED",
+      "acceptance_criteria": [
+        "Ordinary horizontal, vertical, equal-endpoint, and two-/three-point route45 outputs preserve count, order, coordinates, and waypoint convention.",
+        "Opposite-sign MAX_VALUE endpoints and any waypoint/delta overflow classify as NON_REPRESENTABLE or INVALID through the checked path without duplicate or zero-length segments.",
+        "The legacy wrapper cannot be used by the client as proof of route45 invariants; no partial track is persisted after checked failure.",
+        "Any direct fallback is separately labelled and created only after its own finite representability proof."
+      ]
+    },
+    {
+      "id": "P24D-ROTATION-CANCELLATION",
+      "status": "ACCEPTANCE_DEFINED",
+      "acceptance_criteria": [
+        "Special-angle identities are exact only when the input angle is proven special; arbitrary-angle coefficients carry certified intervals.",
+        "Products, cancellation, translation, overflow, underflow, signed zero, and output-cell classification are included in the enclosure.",
+        "Large equal-coordinate 45-degree cases never consume a spurious finite residual as certified geometry; uncertainty is localized to the affected pad or pin.",
+        "Uncertain transformed pads cannot pass clearance and uncertain pins cannot union; unrelated findings remain available."
+      ]
+    },
+    {
+      "id": "P24D-SHAPE-SCALE-TOLERANCE",
+      "status": "ACCEPTANCE_DEFINED",
+      "acceptance_criteria": [
+        "The absolute 1e-12 orientation/on-segment policy is removed from the design target without replacing it with another unit-dependent epsilon.",
+        "Finite dyadic orientation and endpoint relations are exact or conservatively indeterminate; exact orientation is never substituted for Euclidean distance.",
+        "The 1e-7-width, approximately 2e-13-gap rectangle case remains positive/separated when proven and never becomes guessed zero.",
+        "Rectangle/oval interval exhaustion, overflow, underflow, and interval overlap map to INDETERMINATE or NON_REPRESENTABLE and then to fail-closed DRC, never a clearance pass."
+      ]
+    }
+  ]
+}
