@@ -28,6 +28,11 @@ def rep_fraction(s: str) -> Fraction:
 def ordered(b: int) -> int:
     return ((~b) & MASK64) if (b & SIGN) else (b ^ SIGN)
 def ulp_diff(a: int, b: int) -> int: return abs(ordered(a) - ordered(b))
+def unique_round(lo, hi, lo_raw, hi_raw):
+    if lo is None or hi is None or round_fraction(lo) != round_fraction(hi): return None
+    if lo == 0 and hi == 0 and lo_raw.startswith('-') and hi_raw.startswith('-'):
+        return SIGN
+    return round_fraction(lo)
 
 def parse_line(line: str):
     fields = line.split()
@@ -57,10 +62,10 @@ for row in rows:
     source_x = Fraction.from_float(from_bits(sx_bits)) if sx_bits & 0x7ff0000000000000 != 0x7ff0000000000000 else None
     source_y = Fraction.from_float(from_bits(sy_bits)) if sy_bits & 0x7ff0000000000000 != 0x7ff0000000000000 else None
     trig_within = (sin_val is not None and cos_val is not None and sin_lo is not None and sin_hi is not None and cos_lo is not None and cos_hi is not None and sin_lo <= sin_val <= sin_hi and cos_lo <= cos_val <= cos_hi)
-    sin_round = round_fraction(sin_lo) if sin_lo is not None and sin_hi is not None and round_fraction(sin_lo) == round_fraction(sin_hi) else None
-    cos_round = round_fraction(cos_lo) if cos_lo is not None and cos_hi is not None and round_fraction(cos_lo) == round_fraction(cos_hi) else None
-    x_round = round_fraction(x_lo) if x_lo is not None and x_hi is not None and round_fraction(x_lo) == round_fraction(x_hi) else None
-    y_round = round_fraction(y_lo) if y_lo is not None and y_hi is not None and round_fraction(y_lo) == round_fraction(y_hi) else None
+    sin_round = unique_round(sin_lo, sin_hi, m['sin_lo_raw'], m['sin_hi_raw'])
+    cos_round = unique_round(cos_lo, cos_hi, m['cos_lo_raw'], m['cos_hi_raw'])
+    x_round = unique_round(x_lo, x_hi, m['x_lo_raw'], m['x_hi_raw'])
+    y_round = unique_round(y_lo, y_hi, m['y_lo_raw'], m['y_hi_raw'])
     results.append({
         'id': row['id'],
         'source_final_bits': {'x': bits_hex(sx_bits), 'y': bits_hex(sy_bits)},

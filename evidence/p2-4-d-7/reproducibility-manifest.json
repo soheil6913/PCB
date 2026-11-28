@@ -1,9 +1,9 @@
 {
   "artifact_hashes": [
     {
-      "bytes": 6245,
+      "bytes": 6240,
       "file": "analyze.py",
-      "sha256": "10f1c9bdcf5453036e33695cd3eac06fe2eb3e3ba102dbbf61278589090e3bac"
+      "sha256": "ad1ea34edd41d5c94501abce2018cf4f7714cad0ed6d9a66a666596a2de27e24"
     },
     {
       "bytes": 2108,
