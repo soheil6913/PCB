@@ -1,0 +1,31 @@
+{
+  "artifacts": [
+    {
+      "bytes": 23785,
+      "file": "evidence/p2-4-d-10/case-adjudication-matrix.json",
+      "sha256": "209f8ec7d8090589af2f8f0dec3583cd1967348c62039999508de04f1f0e64ce"
+    },
+    {
+      "bytes": 4311,
+      "file": "evidence/p2-4-d-10/generate_matrix.py",
+      "sha256": "3235e87a020b37d4f90a9829e6a59e1d35dff0abc8e44aff30ca9850c389cb07"
+    },
+    {
+      "bytes": 1187,
+      "file": "evidence/p2-4-d-10/repository-attestation.json",
+      "sha256": "b3da79e8e8741d2f30ecfc7b55bd6050d45de5ea4fe3c8e1ea1b1c61a1ec3de0"
+    }
+  ],
+  "branch": "evidence/phase6-1-p2-4-d-10-oracle-strategy-20261128",
+  "d11": "not justified as generic reproduction; only targeted work with a new authoritative oracle may be justified",
+  "decision": "PARTIALLY ESTABLISHED",
+  "officialSources": [
+    "https://tc39.es/ecma262/2026/multipage/ecmascript-data-types-and-values.html#sec-ecmascript-language-types-number-type",
+    "https://tc39.es/ecma262/2026/multipage/numbers-and-dates.html#sec-math.sin",
+    "https://tc39.es/ecma262/2026/multipage/numbers-and-dates.html#sec-math.cos",
+    "https://tc39.es/ecma262/2026/multipage/overview.html#sec-implementation-approximated",
+    "https://www.mpfr.org/mpfr-4.2.1/mpfr.html"
+  ],
+  "phase": "P2.4-D-10",
+  "reportBaseHead": "5ef6266cd002fb835824bb9e6f588ab07f99a0ba"
+}
