@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "id": "ordinary-45",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "ordinary-90",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "ordinary-180",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "ordinary-270",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "ordinary-360",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "negative-angle",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "adjacent-45",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "adjacent-90",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "adjacent-180",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "adjacent-270",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "adjacent-360",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "large-cancellation",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "large-opposite",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "huge-angle",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    },
+    {
+      "id": "max-angle",
+      "reasons": [
+        "captured JavaScript Math.sin/cos is outside at least one directed MPFR interval",
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output",
+        "Model A output interval does not prove a unique binary64 output cell"
+      ]
+    },
+    {
+      "id": "overflow-translation",
+      "reasons": [
+        "Model A transformed-coordinate enclosure does not contain the captured Model B output"
+      ]
+    }
+  ],
+  "count": 16
+}

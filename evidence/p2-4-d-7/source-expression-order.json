@@ -1,0 +1,16 @@
+{
+  "degree_radian_order": "degrees * Math.PI / 180 (left associative: multiplication then division)",
+  "rotatePoint": {
+    "expression": "radians = degrees * Math.PI / 180; cos = Math.cos(radians); sin = Math.sin(radians); x = point.x * cos - point.y * sin; y = point.x * sin + point.y * cos",
+    "line": 57
+  },
+  "route45": {
+    "expression": "dx = end.x - start.x; dy = end.y - start.y; Math.abs(dx); Math.abs(dy); Math.min(abs(dx), abs(dy)); start.x + Math.sign(dx) * diagonal",
+    "line": 59
+  },
+  "source_sha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+  "transformLocalPoint": {
+    "expression": "rotated = rotatePoint(local, rotation); x = origin.x + rotated.x; y = origin.y + rotated.y",
+    "line": 58
+  }
+}
