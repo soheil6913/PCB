@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "case_class": "required geometry class",
+    "production_evaluator_present": "whether D12 found the proposed evaluator in the baseline",
+    "reference_oracle": "available independent reference",
+    "budget_status": "UNVALIDATED|SUPPORTED|REJECTED",
+    "conclusion": "evidence disposition"
+  },
+  "proposed_budget": {
+    "MAX_CERTIFIED_CELLS": 4096,
+    "MAX_INTERVAL_EVALUATIONS": 32768,
+    "MAX_SUBDIVISION_DEPTH": 32
+  },
+  "production_evaluator_present": false,
+  "budget_status": "UNVALIDATED",
+  "cases": [
+    {
+      "case_class": "ordinary ellipse interactions",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "near-tangent",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "nearly coincident boundaries",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "very small dimensions",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "very large finite dimensions",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "high aspect ratio",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "near-zero clearance",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "interval dependency widening",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "slow subdivision convergence",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    },
+    {
+      "case_class": "budget exhaustion",
+      "production_evaluator_present": false,
+      "reference_oracle": "Not executed against a production evaluator; analytic reference may be designed but cannot validate absent implementation.",
+      "budget_status": "UNVALIDATED",
+      "conclusion": "No counters, runtime, memory, or exhaustion behavior can be measured in this design-only phase."
+    }
+  ],
+  "semantic_requirements": {
+    "intersection": "certified overlap/contact, not tolerance guess",
+    "tangency": "exact or certified contact relation",
+    "threshold_equality": "must be specified by DRC policy; no evidence here establishes pass/fail for equality",
+    "positive_separation": "certified positive lower bound",
+    "indeterminate": "error-severity fail-closed geometry result",
+    "gJK_policy": "unchanged; budget is not a GJK iteration cap"
+  }
+}

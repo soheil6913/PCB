@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "claim": "reviewed proposition",
+    "mathematical_basis": "basis",
+    "required_assumptions": "assumptions",
+    "evidence_or_derivation": "current support",
+    "independent_verification": "method",
+    "counterexample_or_failure": "failure mode",
+    "status": "PROVEN|EXPERIMENTALLY_SUPPORTED|ASSUMED|OPEN"
+  },
+  "claims": [
+    {
+      "claim": "Exact finite binary64 input decomposition into dyadics",
+      "mathematical_basis": "IEEE-754 binary64 bit interpretation",
+      "required_assumptions": "raw bits imported without decimal conversion",
+      "evidence_or_derivation": "D7-D10 manifests and D9 captures record raw hexadecimal bits",
+      "independent_verification": "re-decode bit patterns with exact integer/exponent parser",
+      "counterexample_or_failure": "decimal import or signed-zero loss",
+      "status": "EXPERIMENTALLY_SUPPORTED"
+    },
+    {
+      "claim": "Arbitrary-angle interval trig kernel encloses the mathematical result",
+      "mathematical_basis": "range reduction plus polynomial remainder bound",
+      "required_assumptions": "published constants, exact quotient, outward widening, complete remainder proof",
+      "evidence_or_derivation": "D11 design only; no constants or derivation artifact published",
+      "independent_verification": "review constants and interval proof against independent high-precision oracle",
+      "counterexample_or_failure": "quadrant-boundary straddle, missing directed rounding, Table Maker uncertainty",
+      "status": "OPEN"
+    },
+    {
+      "claim": "MPFR proves ECMAScript Math.sin/cos correctness",
+      "mathematical_basis": "none without runtime approximation contract",
+      "required_assumptions": "runtime-specific libm/error bound",
+      "evidence_or_derivation": "D10 explicitly rejects this inference",
+      "independent_verification": "runtime/library attestation plus bound",
+      "counterexample_or_failure": "implementation-approximated ECMAScript Math functions",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Output-cell containment proves one rounded binary64 coordinate",
+      "mathematical_basis": "roundTiesToEven predecessor/successor midpoint cells",
+      "required_assumptions": "correct nextUp/nextDown, signed-zero, subnormal, tie, overflow handling",
+      "evidence_or_derivation": "independent D12 reference vectors; no product implementation",
+      "independent_verification": "exact Fraction boundary vectors and tie tests",
+      "counterexample_or_failure": "cell proof discarded before geometry classification",
+      "status": "EXPERIMENTALLY_SUPPORTED"
+    },
+    {
+      "claim": "Output-cell certification proves downstream geometry correctness",
+      "mathematical_basis": "not implied by scalar rounding",
+      "required_assumptions": "consumers preserve and consume enclosures",
+      "evidence_or_derivation": "baseline consumers accept Point/number values and discard uncertainty",
+      "independent_verification": "call-site audit and integration tests",
+      "counterexample_or_failure": "raw rounded point treated as exact; false union/clearance",
+      "status": "OPEN"
+    },
+    {
+      "claim": "4096/32768/32 ellipse budget is adequate",
+      "mathematical_basis": "requires convergence/resource analysis over corpus",
+      "required_assumptions": "certified interval evaluator exists and is benchmarked",
+      "evidence_or_derivation": "proposed only; evaluator absent from baseline",
+      "independent_verification": "independent oracle, counters, runtime/memory corpus",
+      "counterexample_or_failure": "slow convergence or interval dependency exhaustion",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Q1-Q5 policies are specified by D11 closure",
+      "mathematical_basis": "contract policy decisions",
+      "required_assumptions": "later closure report is supplementary, not implementation proof",
+      "evidence_or_derivation": "D11 report and matrix",
+      "independent_verification": "provenance comparison and source call-site audit",
+      "counterexample_or_failure": "policy mistaken for implemented behavior",
+      "status": "EXPERIMENTALLY_SUPPORTED"
+    }
+  ]
+}

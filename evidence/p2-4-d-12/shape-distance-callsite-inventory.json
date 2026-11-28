@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "file_line": "exact source location",
+    "function": "symbol",
+    "caller": "consumer",
+    "current_behavior": "baseline behavior",
+    "checked_path_requirement": "D12 requirement",
+    "compatibility_risk": "risk",
+    "required_fixture": "fixture",
+    "status": "OPEN|DESIGN_ONLY"
+  },
+  "baseline": "P2.4-B e567acb883a0f81cb0c64d11f638b5f872511346",
+  "entries": [
+    {
+      "file_line": "shared/engineering.ts:256-258",
+      "function": "strictOrientation/strictOnSegment/strictSegmentsIntersect",
+      "caller": "strictSegmentDistance, pointInConvexPolygon",
+      "current_behavior": "absolute 1e-12 determinant and coordinate tolerance",
+      "checked_path_requirement": "exact dyadic sign or interval indeterminate",
+      "compatibility_risk": "small positive gaps collapse to contact",
+      "required_fixture": "1e-7 width, approximately 2e-13 gap",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:259-261",
+      "function": "strictSegmentDistance/rectToRectDistance",
+      "caller": "padToPadDistanceDetailed:292",
+      "current_behavior": "zero returned on tolerance-based intersection",
+      "checked_path_requirement": "certified distance interval; no guessed zero",
+      "compatibility_risk": "false DRC violation",
+      "required_fixture": "small-scale separation, tangency, overlap, translated copies",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:262",
+      "function": "rectToOvalDistance/ellipse helpers",
+      "caller": "padToPadDistanceDetailed:292",
+      "current_behavior": "analytic/iterative distance path; no proposed certified budget",
+      "checked_path_requirement": "deterministic interval proof or indeterminate",
+      "compatibility_risk": "budget adequacy and overflow unvalidated",
+      "required_fixture": "near tangent, high aspect, overflow, exhaustion",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:381",
+      "function": "DRC pad-to-pad consumer",
+      "caller": "evaluatePcbV2",
+      "current_behavior": "indeterminate/nonfinite maps to PCB_GEOMETRY_INDETERMINATE; finite values compare threshold",
+      "checked_path_requirement": "preserve fail-closed semantics for all uncertainty",
+      "compatibility_risk": "new states may be dropped by wrappers",
+      "required_fixture": "uncertain distance cannot pass; finding IDs/order stable",
+      "status": "OPEN"
+    }
+  ]
+}

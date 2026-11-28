@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "file_line": "exact source location",
+    "function": "symbol",
+    "caller": "direct caller",
+    "current_behavior": "baseline behavior",
+    "checked_path_requirement": "D12 requirement",
+    "compatibility_risk": "risk",
+    "required_fixture": "fixture",
+    "status": "OPEN|DESIGN_ONLY"
+  },
+  "baseline": "P2.4-B e567acb883a0f81cb0c64d11f638b5f872511346",
+  "entries": [
+    {
+      "file_line": "shared/engineering.ts:33",
+      "function": "route45",
+      "caller": "external callers; no checked route caller identified in baseline",
+      "current_behavior": "raw endpoint subtraction, absolute EPSILON comparisons, array result",
+      "checked_path_requirement": "route45Checked must validate representability and duplicate-waypoint invariants before client use",
+      "compatibility_risk": "legacy [start,end] can be mistaken for valid route45",
+      "required_fixture": "opposite-sign MAX_VALUE, invalid input, ordinary two/three-point, transactional failure",
+      "status": "OPEN"
+    }
+  ]
+}

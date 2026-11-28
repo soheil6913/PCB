@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "file_line": "exact source location",
+    "function": "symbol",
+    "caller": "consumer",
+    "current_behavior": "baseline behavior",
+    "checked_path_requirement": "D12 requirement",
+    "compatibility_risk": "risk",
+    "required_fixture": "fixture",
+    "status": "OPEN|DESIGN_ONLY"
+  },
+  "baseline": "P2.4-B e567acb883a0f81cb0c64d11f638b5f872511346",
+  "entries": [
+    {
+      "file_line": "shared/engineering.ts:31",
+      "function": "rotatePoint",
+      "caller": "transformLocalPoint and external callers",
+      "current_behavior": "direct Math.sin/cos and two-product arithmetic",
+      "checked_path_requirement": "internal checked transform with coefficient/error enclosure",
+      "compatibility_risk": "public best-effort point cannot carry uncertainty",
+      "required_fixture": "ordinary/special/cancellation/signed-zero/overflow",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:32",
+      "function": "transformLocalPoint",
+      "caller": "localPads:125; validateSchematic:340",
+      "current_behavior": "adds raw rotated point to origin",
+      "checked_path_requirement": "checked transform and localized state",
+      "compatibility_risk": "untrusted finite residual can enter pads/pins",
+      "required_fixture": "large origin, cancellation, non-representable translation",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:125",
+      "function": "localPads",
+      "caller": "evaluatePcbV2:372",
+      "current_behavior": "maps transformed pads without checked state",
+      "checked_path_requirement": "uncertain pad blocks only dependent clearance findings",
+      "compatibility_risk": "raw transform reaches DRC",
+      "required_fixture": "uncertain pad plus unrelated pad findings",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:340",
+      "function": "validateSchematic pin transform",
+      "caller": "validateSchematic",
+      "current_behavior": "raw transformed point is union candidate",
+      "checked_path_requirement": "uncertain pin cannot union",
+      "compatibility_risk": "false topology union",
+      "required_fixture": "uncertain pin and unrelated required pin",
+      "status": "OPEN"
+    },
+    {
+      "file_line": "shared/engineering.ts:381",
+      "function": "padToPadDistanceDetailed consumer",
+      "caller": "evaluatePcbV2",
+      "current_behavior": "finite numeric result drives clearance comparison",
+      "checked_path_requirement": "consume interval/state and fail closed",
+      "compatibility_risk": "uncertainty can become pass or false geometry",
+      "required_fixture": "interval overlap and transformed uncertain pad",
+      "status": "OPEN"
+    }
+  ]
+}

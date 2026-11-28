@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "phase": "P2.4-D-12",
+  "generated_by": "evidence-only Python reference",
+  "artifacts": [
+    "baseline-compatibility-matrix.json",
+    "binary64-output-cell-vectors.json",
+    "ellipse-budget-validation.json",
+    "oracle-case-inventory.json",
+    "proof-review-matrix.json",
+    "route45-callsite-inventory.json",
+    "shape-distance-callsite-inventory.json",
+    "transform-callsite-inventory.json"
+  ]
+}

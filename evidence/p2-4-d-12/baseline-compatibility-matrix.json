@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "reference": "commit or branch",
+    "sha": "identity",
+    "parent_or_ancestry": "Git relationship",
+    "source_tree_status": "applicability",
+    "compatibility_disposition": "future requirement"
+  },
+  "entries": [
+    {
+      "reference": "P2.4-B baseline",
+      "sha": "e567acb883a0f81cb0c64d11f638b5f872511346",
+      "parent_or_ancestry": "parent 3ed17c246dadf80eab73f81bfc775845d582dbf1",
+      "source_tree_status": "exact D11 implementation target; raw geometry paths present",
+      "compatibility_disposition": "implementation planning must start here or explicitly reconcile forward"
+    },
+    {
+      "reference": "P2.4-C original",
+      "sha": "21b7487eec431dcb993a44d0d642a33644141526",
+      "parent_or_ancestry": "child of P2.4-B",
+      "source_tree_status": "unmerged historical reference",
+      "compatibility_disposition": "compatibility target only"
+    },
+    {
+      "reference": "accepted P2.4-C remediation",
+      "sha": "327fc0479031279b889ea1dd1140a23d4abe442f",
+      "parent_or_ancestry": "child of P2.4-C original; P2.4-B ancestor",
+      "source_tree_status": "unmerged; absent from current main",
+      "compatibility_disposition": "future adapter/integration target; do not describe as main behavior"
+    },
+    {
+      "reference": "current source main",
+      "sha": "a98384bbfc3296947b90f5254a03a77b11fdc8a9",
+      "parent_or_ancestry": "not descended from P2.4-B/P2.4-C references",
+      "source_tree_status": "historical current-main tree, earlier/different source state",
+      "compatibility_disposition": "not interchangeable with D11 baseline"
+    },
+    {
+      "reference": "D11 report",
+      "sha": "1106443b890dc9f64d46bdc47d13ea1f0f5eac59",
+      "parent_or_ancestry": "documentation branch from report main",
+      "source_tree_status": "design closure only",
+      "compatibility_disposition": "does not authorize implementation"
+    }
+  ],
+  "changed_files_p2_4_c_vs_b": [
+    "shared/engineering.ts",
+    "shared/phase6-1-p2-4-c-numerical-uncertainty.test.ts"
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "case_id": "D9 identifier",
+    "original_property": "unresolved proposition",
+    "reproduction_result": "captured evidence fields",
+    "independent_proof": "boolean",
+    "proof_status": "PROVEN|EXPERIMENTALLY_SUPPORTED|ASSUMED|OPEN",
+    "closure_counted": "boolean",
+    "reason": "adjudication rule",
+    "source": "artifact provenance"
+  },
+  "case_count": 16,
+  "closed_count": 0,
+  "remaining_count": 16,
+  "cases": [
+    {
+      "case_id": "ordinary-45",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "ordinary-90",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "ordinary-180",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "ordinary-270",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "EXPERIMENTALLY_SUPPORTED",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "ordinary-360",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "negative-angle",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "EXPERIMENTALLY_SUPPORTED",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "adjacent-45",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "adjacent-90",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "adjacent-180",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "adjacent-270",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "adjacent-360",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "large-cancellation",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "EXPERIMENTALLY_SUPPORTED",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "large-opposite",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "huge-angle",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "max-angle",
+      "original_property": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output",
+        "Model A output interval does not prove a unique binary64 output cell"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": false,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": false,
+          "y": false
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    },
+    {
+      "case_id": "overflow-translation",
+      "original_property": [
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproduction_result": {
+        "reproduced": true,
+        "capture_present": true,
+        "mpfr_record_present": true,
+        "trig_interval_contains_js": true,
+        "model_a_contains_model_b": false,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        }
+      },
+      "independent_proof": false,
+      "proof_status": "OPEN",
+      "closure_counted": false,
+      "reason": "Runtime/MPFR observation is reproducible, but no runtime-specific trig certificate or complete Model-A/Model-B operation proof is present.",
+      "source": "D9 case-by-case-closure.json and D10 case-adjudication-matrix.json"
+    }
+  ],
+  "rule": "A case closes only when the original property is independently established; reproduction, MPFR agreement, or two-implementation agreement alone is insufficient."
+}
