@@ -1,0 +1,7976 @@
+{
+  "runtime": {
+    "node": "v22.23.4",
+    "v8": "12.4.254.21-node.57",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "summary": {
+    "signed_zero_observations": 11,
+    "extreme_vectors": 121,
+    "nonfinite_inputs": 57,
+    "output_nan": 65,
+    "output_infinite": 20,
+    "negative_zero_outputs": 7
+  },
+  "signed_zero": {
+    "input_pos_zero": {
+      "decimal": "0",
+      "bits": "0x0000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": false
+    },
+    "input_neg_zero": {
+      "decimal": "0",
+      "bits": "0x8000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": true
+    },
+    "sin_neg_zero": {
+      "decimal": "0",
+      "bits": "0x8000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": true
+    },
+    "cos_neg_zero": {
+      "decimal": "1",
+      "bits": "0x3ff0000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": false
+    },
+    "add_neg_zero_pos_zero": {
+      "decimal": "0",
+      "bits": "0x0000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": false
+    },
+    "sub_pos_zero_pos_zero": {
+      "decimal": "0",
+      "bits": "0x0000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": false
+    },
+    "mul_pos_zero_neg_one": {
+      "decimal": "0",
+      "bits": "0x8000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": true
+    },
+    "mul_neg_zero_neg_one": {
+      "decimal": "0",
+      "bits": "0x0000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": false
+    },
+    "div_one_neg_inf": {
+      "decimal": "0",
+      "bits": "0x8000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": true
+    },
+    "atan2_neg_zero_one": {
+      "decimal": "0",
+      "bits": "0x8000000000000000",
+      "finite": true,
+      "nan": false,
+      "posInf": false,
+      "negInf": false,
+      "negZero": true
+    },
+    "sign_neg_zero": 0
+  },
+  "extreme_vectors": [
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1e-323",
+        "bits": "0x0000000000000002",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1e-323",
+        "bits": "0x8000000000000002",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "5e-324",
+        "bits": "0x0000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-5e-324",
+        "bits": "0x8000000000000001",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.99584030953472e+292",
+        "bits": "0x7ca0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.7976931348623155e+308",
+        "bits": "0xffeffffffffffffe",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.7976931348623155e+308",
+        "bits": "0xffeffffffffffffe",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.7976931348623153e+308",
+        "bits": "0x7feffffffffffffd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.161108346061576e+308",
+        "bits": "0xffe4ab1d387c7eb7",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.99584030953472e+292",
+        "bits": "0xfca0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.7976931348623155e+308",
+        "bits": "0x7feffffffffffffe",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.7976931348623155e+308",
+        "bits": "0x7feffffffffffffe",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.7976931348623153e+308",
+        "bits": "0xffeffffffffffffd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.161108346061576e+308",
+        "bits": "0x7fe4ab1d387c7eb7",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1.7976931348623157e+308",
+        "bits": "0xffefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "9.9792015476736e+291",
+        "bits": "0x7c90000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1.414213562373095e+308",
+        "bits": "0x7fe92c80954c51f4",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.0000000000000002e+308",
+        "bits": "0xffe1ccf385ebc8a1",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-9.999999999999998e+307",
+        "bits": "0xffe1ccf385ebc89f",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.0000000000000002e+308",
+        "bits": "0x7fe1ccf385ebc8a1",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "9.999999999999998e+307",
+        "bits": "0x7fe1ccf385ebc89f",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.2581052209946652e+308",
+        "bits": "0xffe6651fc9ebc9c3",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-6.458879569290365e+307",
+        "bits": "0xffd6fe8f545f3b22",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x0000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "radians": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0",
+        "bits": "0x8000000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": true
+      },
+      "x": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "45",
+        "bits": "0x4046800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "0.7853981633974483",
+        "bits": "0x3fe921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "0.7071067811865476",
+        "bits": "0x3fe6a09e667f3bcd",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.7071067811865475",
+        "bits": "0x3fe6a09e667f3bcc",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-9.9792015476736e+291",
+        "bits": "0xfc90000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1.414213562373095e+308",
+        "bits": "0xffe92c80954c51f4",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "90",
+        "bits": "0x4056800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1.5707963267948966",
+        "bits": "0x3ff921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "6.123233995736766e-17",
+        "bits": "0x3c91a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1e+308",
+        "bits": "0x7fe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "180",
+        "bits": "0x4066800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "3.141592653589793",
+        "bits": "0x400921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-1",
+        "bits": "0xbff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "1.2246467991473532e-16",
+        "bits": "0x3ca1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.0000000000000002e+308",
+        "bits": "0x7fe1ccf385ebc8a1",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "9.999999999999998e+307",
+        "bits": "0x7fe1ccf385ebc89f",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "360",
+        "bits": "0x4076800000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "6.283185307179586",
+        "bits": "0x401921fb54442d18",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "1",
+        "bits": "0x3ff0000000000000",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "-2.4492935982947064e-16",
+        "bits": "0xbcb1a62633145c07",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "-1.0000000000000002e+308",
+        "bits": "0xffe1ccf385ebc8a1",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "-9.999999999999998e+307",
+        "bits": "0xffe1ccf385ebc89f",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "100000000000000000000",
+        "bits": "0x4415af1d78b58c40",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "1745329251994329600",
+        "bits": "0x43b838a7b5213862",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "-0.9519965889618508",
+        "bits": "0xbfee76c18cefd49d",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "0.3061086320328143",
+        "bits": "0x3fd39748a8e6abcb",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "1.2581052209946652e+308",
+        "bits": "0x7fe6651fc9ebc9c3",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "6.458879569290365e+307",
+        "bits": "0x7fd6fe8f545f3b22",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "1.7976931348623157e+308",
+        "bits": "0x7fefffffffffffff",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "Infinity",
+        "bits": "0x7ff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": true,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "-Infinity",
+        "bits": "0xfff0000000000000",
+        "finite": false,
+        "nan": false,
+        "posInf": false,
+        "negInf": true,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0xfff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    },
+    {
+      "n": {
+        "decimal": "-1e+308",
+        "bits": "0xffe1ccf385ebc8a0",
+        "finite": true,
+        "nan": false,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "degrees": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "radians": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "cos": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "sin": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "x": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      },
+      "y": {
+        "decimal": "NaN",
+        "bits": "0x7ff8000000000000",
+        "finite": false,
+        "nan": true,
+        "posInf": false,
+        "negInf": false,
+        "negZero": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "acceptance_matrix": [
+    {
+      "closed": false,
+      "id": "ordinary-45",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "ordinary-90",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "ordinary-180",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "ordinary-270",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "ordinary-360",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "negative-angle",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "adjacent-45",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "adjacent-90",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "adjacent-180",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "adjacent-270",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "adjacent-360",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "large-cancellation",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "large-opposite",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "huge-angle",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "max-angle",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    },
+    {
+      "closed": false,
+      "id": "overflow-translation",
+      "oracle_established": false,
+      "reason": "Runtime and MPFR evidence reproduced; original unresolved proposition remains unproven",
+      "reproduced": true
+    }
+  ],
+  "attestation": {
+    "accepted": true,
+    "dirtyStatus": "",
+    "expectedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "fileSha256": "545038007080da77f36e8e3bf3bab6945b6ad8bd949536fca9069cdcbf3164e9",
+    "observedSha": "941262899a46e54cbf1a94a4da6dd528b8d36780",
+    "sourceRoot": "/tmp/p24d7-source"
+  },
+  "cases": [
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "ordinary-45",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4046800000000000",
+          "local.x": "0x4008000000000000",
+          "local.y": "0xc010000000000000",
+          "origin.x": "0x4059000000000000",
+          "origin.y": "0xc069000000000000",
+          "ox_bits": "0x4059000000000000",
+          "oy_bits": "0xc069000000000000",
+          "rad_bits": "0x3fe921fb54442d18",
+          "radians": "0x3fe921fb54442d18",
+          "x_bits": "0x4008000000000000",
+          "y_bits": "0xc010000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "ordinary-90",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4056800000000000",
+          "local.x": "0x4008000000000000",
+          "local.y": "0xc010000000000000",
+          "origin.x": "0x4059000000000000",
+          "origin.y": "0xc069000000000000",
+          "ox_bits": "0x4059000000000000",
+          "oy_bits": "0xc069000000000000",
+          "rad_bits": "0x3ff921fb54442d18",
+          "radians": "0x3ff921fb54442d18",
+          "x_bits": "0x4008000000000000",
+          "y_bits": "0xc010000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "ordinary-180",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4066800000000000",
+          "local.x": "0x4008000000000000",
+          "local.y": "0xc010000000000000",
+          "origin.x": "0x4059000000000000",
+          "origin.y": "0xc069000000000000",
+          "ox_bits": "0x4059000000000000",
+          "oy_bits": "0xc069000000000000",
+          "rad_bits": "0x400921fb54442d18",
+          "radians": "0x400921fb54442d18",
+          "x_bits": "0x4008000000000000",
+          "y_bits": "0xc010000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "ordinary-270",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4070e00000000000",
+          "local.x": "0x4008000000000000",
+          "local.y": "0xc010000000000000",
+          "origin.x": "0x4059000000000000",
+          "origin.y": "0xc069000000000000",
+          "ox_bits": "0x4059000000000000",
+          "oy_bits": "0xc069000000000000",
+          "rad_bits": "0x4012d97c7f3321d2",
+          "radians": "0x4012d97c7f3321d2",
+          "x_bits": "0x4008000000000000",
+          "y_bits": "0xc010000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "ordinary-360",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4076800000000000",
+          "local.x": "0x4008000000000000",
+          "local.y": "0xc010000000000000",
+          "origin.x": "0x4059000000000000",
+          "origin.y": "0xc069000000000000",
+          "ox_bits": "0x4059000000000000",
+          "oy_bits": "0xc069000000000000",
+          "rad_bits": "0x401921fb54442d18",
+          "radians": "0x401921fb54442d18",
+          "x_bits": "0x4008000000000000",
+          "y_bits": "0xc010000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "negative-angle",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0xc046800000000000",
+          "local.x": "0x408f400000000000",
+          "local.y": "0xc09f400000000000",
+          "origin.x": "0xc0af400000000000",
+          "origin.y": "0x40b3880000000000",
+          "ox_bits": "0xc0af400000000000",
+          "oy_bits": "0x40b3880000000000",
+          "rad_bits": "0xbfe921fb54442d18",
+          "radians": "0xbfe921fb54442d18",
+          "x_bits": "0x408f400000000000",
+          "y_bits": "0xc09f400000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "adjacent-45",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4046800000000000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x3ff0000000000000",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x3fe921fb54442d18",
+          "radians": "0x3fe921fb54442d18",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x3ff0000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "adjacent-90",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4056800000000000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0xbff0000000000000",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x3ff921fb54442d18",
+          "radians": "0x3ff921fb54442d18",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0xbff0000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "adjacent-180",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4066800000000000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x3ff0000000000000",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x400921fb54442d18",
+          "radians": "0x400921fb54442d18",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x3ff0000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "adjacent-270",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4070e00000000000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x3ff0000000000000",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x4012d97c7f3321d2",
+          "radians": "0x4012d97c7f3321d2",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x3ff0000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "adjacent-360",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4076800000000000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x3ff0000000000000",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x401921fb54442d18",
+          "radians": "0x401921fb54442d18",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x3ff0000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "large-cancellation",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4046800000000000",
+          "local.x": "0x7fefffffffffffff",
+          "local.y": "0x7fefffffffffffff",
+          "origin.x": "0x0000000000000000",
+          "origin.y": "0x0000000000000000",
+          "ox_bits": "0x0000000000000000",
+          "oy_bits": "0x0000000000000000",
+          "rad_bits": "0x3fe921fb54442d18",
+          "radians": "0x3fe921fb54442d18",
+          "x_bits": "0x7fefffffffffffff",
+          "y_bits": "0x7fefffffffffffff"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "large-opposite",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4046800000000000",
+          "local.x": "0x7fefffffffffffff",
+          "local.y": "0xffefffffffffffff",
+          "origin.x": "0xffefffffffffffff",
+          "origin.y": "0x7fefffffffffffff",
+          "ox_bits": "0xffefffffffffffff",
+          "oy_bits": "0x7fefffffffffffff",
+          "rad_bits": "0x3fe921fb54442d18",
+          "radians": "0x3fe921fb54442d18",
+          "x_bits": "0x7fefffffffffffff",
+          "y_bits": "0xffefffffffffffff"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "huge-angle",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x4341c37937e08000",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x4000000000000000",
+          "origin.x": "0x4008000000000000",
+          "origin.y": "0x4010000000000000",
+          "ox_bits": "0x4008000000000000",
+          "oy_bits": "0x4010000000000000",
+          "rad_bits": "0x42e3d793a042891f",
+          "radians": "0x42e3d793a042891f",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x4000000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "implementation-dependent under available assumptions; observed mismatch is reproducible but not a proof of incorrect ECMAScript behavior",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "max-angle",
+      "independent_oracle": "Independent Node/V8 capture + 256-bit directed MPFR interval and unique-cell comparison",
+      "original_unresolved_proposition": [
+        "captured JavaScript trigonometric result is outside at least one directed MPFR interval",
+        "exact-real Model A output enclosure does not contain stepwise Model B output",
+        "Model A output interval does not prove a unique binary64 output cell"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x7fefffffffffffff",
+          "local.x": "0x3ff0000000000000",
+          "local.y": "0x4000000000000000",
+          "origin.x": "0x4008000000000000",
+          "origin.y": "0x4010000000000000",
+          "ox_bits": "0x4008000000000000",
+          "oy_bits": "0x4010000000000000",
+          "rad_bits": "0x7ff0000000000000",
+          "radians": "0x7ff0000000000000",
+          "x_bits": "0x3ff0000000000000",
+          "y_bits": "0x4000000000000000"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": false,
+          "y": false
+        },
+        "trig_interval_contains_js": false
+      }
+    },
+    {
+      "determination": "bounded runtime observation; exact-real/stepwise relation remains unresolved",
+      "final_disposition": "NOT CLOSED \u2014 proposition not independently established; retain for next authorized evidence phase",
+      "id": "overflow-translation",
+      "independent_oracle": "Independent JavaScript bit probe + binary64 special-value propagation",
+      "original_unresolved_proposition": [
+        "exact-real Model A output enclosure does not contain stepwise Model B output"
+      ],
+      "reproducible_test": "capture.ts + analyze.py/mpfr_eval.py + binary64_suite.py; case-specific bits are in this record",
+      "reproduction": {
+        "capture_present": true,
+        "fresh_capture_bits": {
+          "degrees": "0x0000000000000000",
+          "local.x": "0x7fefffffffffffff",
+          "local.y": "0xffefffffffffffff",
+          "origin.x": "0x7fefffffffffffff",
+          "origin.y": "0x7fefffffffffffff",
+          "ox_bits": "0x7fefffffffffffff",
+          "oy_bits": "0x7fefffffffffffff",
+          "rad_bits": "0x0000000000000000",
+          "radians": "0x0000000000000000",
+          "x_bits": "0x7fefffffffffffff",
+          "y_bits": "0xffefffffffffffff"
+        },
+        "model_a_contains_model_b": false,
+        "mpfr_record_present": true,
+        "output_cell_unique": {
+          "x": true,
+          "y": true
+        },
+        "trig_interval_contains_js": true
+      }
+    }
+  ],
+  "summary": {
+    "closed_count": 0,
+    "inventory_count": 16,
+    "remaining_count": 16,
+    "trig_mismatch_count": 15,
+    "verdict": "PARTIALLY_VALIDATED"
+  }
+}

@@ -1,0 +1,662 @@
+{
+  "comparison_records": [
+    {
+      "a_bits": "0x0000000000000000",
+      "b_bits": "0x8000000000000000",
+      "eq": true,
+      "gt": false,
+      "id": "compare-0",
+      "lt": false,
+      "unordered": false
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "b_bits": "0x3ff0000000000001",
+      "eq": false,
+      "gt": false,
+      "id": "compare-1",
+      "lt": true,
+      "unordered": false
+    },
+    {
+      "a_bits": "0xbff0000000000000",
+      "b_bits": "0x3ff0000000000000",
+      "eq": false,
+      "gt": false,
+      "id": "compare-2",
+      "lt": true,
+      "unordered": false
+    },
+    {
+      "a_bits": "0x7ff8000000000001",
+      "b_bits": "0x3ff0000000000000",
+      "eq": false,
+      "gt": false,
+      "id": "compare-3",
+      "lt": false,
+      "unordered": true
+    }
+  ],
+  "comparison_vectors": 4,
+  "contract": "IEEE-754 binary64 round-to-nearest, ties-to-even",
+  "finite_matches": 40,
+  "finite_vectors": 40,
+  "midpoint_tests": [
+    {
+      "expected_bits": "0x3ff0000000000000",
+      "id": "even-positive",
+      "observed_bits": "0x3ff0000000000000"
+    },
+    {
+      "expected_bits": "0x3ff0000000000002",
+      "id": "odd-positive",
+      "observed_bits": "0x3ff0000000000002"
+    },
+    {
+      "expected_bits": "0xbff0000000000000",
+      "id": "even-negative",
+      "observed_bits": "0xbff0000000000000"
+    },
+    {
+      "expected_bits": "0xbff0000000000002",
+      "id": "odd-negative",
+      "observed_bits": "0xbff0000000000002"
+    }
+  ],
+  "records": [
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4000000000000000",
+      "id": "add-finite-0",
+      "match": true,
+      "native_bits": "0x4000000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0xbff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0000000000000000",
+      "id": "add-finite-1",
+      "match": true,
+      "native_bits": "0x0000000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x3ff0000000000001",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4000000000000000",
+      "id": "add-finite-2",
+      "match": true,
+      "native_bits": "0x4000000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x0010000000000001",
+      "id": "add-finite-3",
+      "match": true,
+      "native_bits": "0x0010000000000001",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x000fffffffffffff",
+      "a_class": "subnormal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x0010000000000000",
+      "id": "add-finite-4",
+      "match": true,
+      "native_bits": "0x0010000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x7fefffffffffffff",
+      "a_class": "normal",
+      "b_bits": "0x7fefffffffffffff",
+      "b_class": "normal",
+      "exact_bits": "0x7ff0000000000000",
+      "id": "add-finite-5",
+      "match": true,
+      "native_bits": "0x7ff0000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x0000000000000001",
+      "a_class": "subnormal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "add-finite-6",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4000000000000000",
+      "id": "add-finite-7",
+      "match": true,
+      "native_bits": "0x4000000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4008000000000000",
+      "id": "add-finite-8",
+      "match": true,
+      "native_bits": "0x4008000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "add-finite-9",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0000000000000000",
+      "id": "sub-finite-0",
+      "match": true,
+      "native_bits": "0x0000000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0xbff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4000000000000000",
+      "id": "sub-finite-1",
+      "match": true,
+      "native_bits": "0x4000000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x3ff0000000000001",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3cb0000000000000",
+      "id": "sub-finite-2",
+      "match": true,
+      "native_bits": "0x3cb0000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x000fffffffffffff",
+      "id": "sub-finite-3",
+      "match": true,
+      "native_bits": "0x000fffffffffffff",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x000fffffffffffff",
+      "a_class": "subnormal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x000ffffffffffffe",
+      "id": "sub-finite-4",
+      "match": true,
+      "native_bits": "0x000ffffffffffffe",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x7fefffffffffffff",
+      "a_class": "normal",
+      "b_bits": "0x7fefffffffffffff",
+      "b_class": "normal",
+      "exact_bits": "0x0000000000000000",
+      "id": "sub-finite-5",
+      "match": true,
+      "native_bits": "0x0000000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x0000000000000001",
+      "a_class": "subnormal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0xbff0000000000000",
+      "id": "sub-finite-6",
+      "match": true,
+      "native_bits": "0xbff0000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0xc000000000000000",
+      "id": "sub-finite-7",
+      "match": true,
+      "native_bits": "0xc000000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0xbff0000000000000",
+      "id": "sub-finite-8",
+      "match": true,
+      "native_bits": "0xbff0000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "sub-finite-9",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "mul-finite-0",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0xbff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0xbff0000000000000",
+      "id": "mul-finite-1",
+      "match": true,
+      "native_bits": "0xbff0000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000001",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000001",
+      "id": "mul-finite-2",
+      "match": true,
+      "native_bits": "0x3ff0000000000001",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x0000000000000000",
+      "id": "mul-finite-3",
+      "match": true,
+      "native_bits": "0x0000000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x000fffffffffffff",
+      "a_class": "subnormal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x0000000000000000",
+      "id": "mul-finite-4",
+      "match": true,
+      "native_bits": "0x0000000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x7fefffffffffffff",
+      "a_class": "normal",
+      "b_bits": "0x7fefffffffffffff",
+      "b_class": "normal",
+      "exact_bits": "0x7ff0000000000000",
+      "id": "mul-finite-5",
+      "match": true,
+      "native_bits": "0x7ff0000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x0000000000000001",
+      "a_class": "subnormal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0000000000000001",
+      "id": "mul-finite-6",
+      "match": true,
+      "native_bits": "0x0000000000000001",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0020000000000000",
+      "id": "mul-finite-7",
+      "match": true,
+      "native_bits": "0x0020000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x4000000000000000",
+      "id": "mul-finite-8",
+      "match": true,
+      "native_bits": "0x4000000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x0000000000000001",
+      "id": "mul-finite-9",
+      "match": true,
+      "native_bits": "0x0000000000000001",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "div-finite-0",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0xbff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0xbff0000000000000",
+      "id": "div-finite-1",
+      "match": true,
+      "native_bits": "0xbff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x3ff0000000000001",
+      "a_class": "normal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000001",
+      "id": "div-finite-2",
+      "match": true,
+      "native_bits": "0x3ff0000000000001",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x4330000000000000",
+      "id": "div-finite-3",
+      "match": true,
+      "native_bits": "0x4330000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x000fffffffffffff",
+      "a_class": "subnormal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x432ffffffffffffe",
+      "id": "div-finite-4",
+      "match": true,
+      "native_bits": "0x432ffffffffffffe",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x7fefffffffffffff",
+      "a_class": "normal",
+      "b_bits": "0x7fefffffffffffff",
+      "b_class": "normal",
+      "exact_bits": "0x3ff0000000000000",
+      "id": "div-finite-5",
+      "match": true,
+      "native_bits": "0x3ff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x0000000000000001",
+      "a_class": "subnormal",
+      "b_bits": "0x3ff0000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0000000000000001",
+      "id": "div-finite-6",
+      "match": true,
+      "native_bits": "0x0000000000000001",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x0010000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x0008000000000000",
+      "id": "div-finite-7",
+      "match": true,
+      "native_bits": "0x0008000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x4000000000000000",
+      "b_class": "normal",
+      "exact_bits": "0x3fe0000000000000",
+      "id": "div-finite-8",
+      "match": true,
+      "native_bits": "0x3fe0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000001",
+      "b_class": "subnormal",
+      "exact_bits": "0x7ff0000000000000",
+      "id": "div-finite-9",
+      "match": true,
+      "native_bits": "0x7ff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x0000000000000000",
+      "a_class": "+zero",
+      "b_bits": "0x8000000000000000",
+      "b_class": "-zero",
+      "id": "add-special-0",
+      "native_bits": "0x0000000000000000",
+      "operation": "add"
+    },
+    {
+      "a_bits": "0x0000000000000000",
+      "a_class": "+zero",
+      "b_bits": "0x0000000000000000",
+      "b_class": "+zero",
+      "id": "sub-special-1",
+      "native_bits": "0x0000000000000000",
+      "operation": "sub"
+    },
+    {
+      "a_bits": "0x0000000000000000",
+      "a_class": "+zero",
+      "b_bits": "0x7ff0000000000000",
+      "b_class": "+inf",
+      "id": "mul-special-2",
+      "native_bits": "0xfff8000000000000",
+      "operation": "mul"
+    },
+    {
+      "a_bits": "0x3ff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000000",
+      "b_class": "+zero",
+      "id": "div-special-3",
+      "native_bits": "0x7ff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0xbff0000000000000",
+      "a_class": "normal",
+      "b_bits": "0x0000000000000000",
+      "b_class": "+zero",
+      "id": "div-special-4",
+      "native_bits": "0xfff0000000000000",
+      "operation": "div"
+    },
+    {
+      "a_bits": "0x7ff0000000000000",
+      "a_class": "+inf",
+      "b_bits": "0xfff0000000000000",
+      "b_class": "-inf",
+      "id": "add-special-5",
+      "native_bits": "0xfff8000000000000",
+      "operation": "add"
+    }
+  ],
+  "special_vectors": 6,
+  "unary_records": [
+    {
+      "id": "neg-0",
+      "input_bits": "0x0000000000000000",
+      "operation": "unary-negation",
+      "output_bits": "0x8000000000000000"
+    },
+    {
+      "id": "abs-0",
+      "input_bits": "0x0000000000000000",
+      "operation": "absolute-value",
+      "output_bits": "0x0000000000000000"
+    },
+    {
+      "id": "neg-1",
+      "input_bits": "0x8000000000000000",
+      "operation": "unary-negation",
+      "output_bits": "0x0000000000000000"
+    },
+    {
+      "id": "abs-1",
+      "input_bits": "0x8000000000000000",
+      "operation": "absolute-value",
+      "output_bits": "0x0000000000000000"
+    },
+    {
+      "id": "neg-2",
+      "input_bits": "0x0000000000000001",
+      "operation": "unary-negation",
+      "output_bits": "0x8000000000000001"
+    },
+    {
+      "id": "abs-2",
+      "input_bits": "0x0000000000000001",
+      "operation": "absolute-value",
+      "output_bits": "0x0000000000000001"
+    },
+    {
+      "id": "neg-3",
+      "input_bits": "0x8000000000000001",
+      "operation": "unary-negation",
+      "output_bits": "0x0000000000000001"
+    },
+    {
+      "id": "abs-3",
+      "input_bits": "0x8000000000000001",
+      "operation": "absolute-value",
+      "output_bits": "0x0000000000000001"
+    },
+    {
+      "id": "neg-4",
+      "input_bits": "0x3ff0000000000000",
+      "operation": "unary-negation",
+      "output_bits": "0xbff0000000000000"
+    },
+    {
+      "id": "abs-4",
+      "input_bits": "0x3ff0000000000000",
+      "operation": "absolute-value",
+      "output_bits": "0x3ff0000000000000"
+    },
+    {
+      "id": "neg-5",
+      "input_bits": "0xbff0000000000000",
+      "operation": "unary-negation",
+      "output_bits": "0x3ff0000000000000"
+    },
+    {
+      "id": "abs-5",
+      "input_bits": "0xbff0000000000000",
+      "operation": "absolute-value",
+      "output_bits": "0x3ff0000000000000"
+    },
+    {
+      "id": "neg-6",
+      "input_bits": "0x7ff0000000000000",
+      "operation": "unary-negation",
+      "output_bits": "0xfff0000000000000"
+    },
+    {
+      "id": "abs-6",
+      "input_bits": "0x7ff0000000000000",
+      "operation": "absolute-value",
+      "output_bits": "0x7ff0000000000000"
+    },
+    {
+      "id": "neg-7",
+      "input_bits": "0x7ff8000000000001",
+      "operation": "unary-negation",
+      "output_bits": "0xfff8000000000001"
+    },
+    {
+      "id": "abs-7",
+      "input_bits": "0x7ff8000000000001",
+      "operation": "absolute-value",
+      "output_bits": "0x7ff8000000000001"
+    }
+  ],
+  "unary_vectors": 16
+}
